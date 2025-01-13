@@ -1,0 +1,8 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+$comment: Reuse provenance chain schema
+
+oneOf:
+  - $ref: bblocks://ogc.ogc-utils.prov
+  - type: array
+    items:
+      $ref: bblocks://ogc.ogc-utils.prov

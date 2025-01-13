@@ -1,0 +1,23 @@
+{
+  "name": "USAGE Provenance Schema",
+  "abstract": "Schema for a provenance chain based on PROV, with additional USAGE terms",
+  "status": "under-development",
+  "dateTimeAddition": "2025-01-06T13:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-building-block-register",
+  "version": "0.1",
+  "dateOfLastChange": "2025-01-09",
+  "sources": [
+    {
+      "title": "Provenance Chain building block",
+      "link": "https://ogcincubator.github.io/bblock-prov-schema/bblock/ogc.ogc-utils.prov/"
+    },
+    {
+      "title": "PROV-O: The PROV Ontology",
+      "link": "https://www.w3.org/TR/prov-o/"
+    }
+  ],
+  "tags": [
+    "provenance", "usage", "prov-o"
+  ]
+}

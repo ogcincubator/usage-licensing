@@ -1,0 +1,76 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+
+$defs:
+  policy:
+    type: object
+    required:
+      - uid
+      - type
+    properties:
+      uid:
+        type: string
+      type:
+        oneOf:
+          - type: string
+            const: Policy
+          - type: array
+            items:
+              type: string
+            contains:
+              const: Policy
+      label:
+        $ref: "#/$defs/multi-lang-string"
+      legalcode:
+        $ref: "#/$defs/multi-lang-string"
+      hasVersion:
+        type: string
+      hasLanguage:
+        type: string
+      logo:
+        type: string
+      permission:
+        $ref: '../rule/schema.yaml'
+      obligation:
+        $ref: '../rule/schema.yaml'
+      prohibition:
+        $ref: '../rule/schema.yaml'
+      inheritFrom:
+        oneOf:
+          - $ref: '#/$defs/policy'
+          - type: string
+      constraint:
+        oneOf:
+          - $ref: '../constraint/schema.yaml'
+          - type: array
+            items:
+              $ref: '../constraint/schema.yaml'
+      target:
+        oneOf:
+          - type: string
+          - type: object
+          - type: array
+            items:
+              oneOf:
+                - type: string
+                - type: object
+
+  lang-string:
+    oneOf:
+      - type: string
+      - type: object
+        required:
+          - '@value'
+        properties:
+          '@language':
+            type: string
+          '@value':
+            type: string
+
+  multi-lang-string:
+    oneOf:
+      - $ref: '#/$defs/lang-string'
+      - type: array
+        items:
+          $ref: '#/$defs/lang-string'
+
+$ref: '#/$defs/policy'

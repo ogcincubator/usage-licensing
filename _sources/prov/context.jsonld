@@ -1,0 +1,15 @@
+{
+  "@context": {
+    "rdflicense": "http://purl.org/NET/rdflicense/",
+    "odrl": "http://www.w3.org/ns/odrl/2/",
+    "title": "dct:title",
+    "description": "dct:description",
+    "license": {
+      "@id": "dct:license",
+      "@type": "@id",
+      "@context": {
+        "@base": "http://purl.org/NET/rdflicense/"
+      }
+    }
+  }
+}

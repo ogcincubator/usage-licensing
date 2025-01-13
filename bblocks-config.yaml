@@ -1,22 +1,23 @@
 # A short, descriptive name of this building block collection
-name: My OGC Building Blocks repository
+name: USAGE project licensing
 
 # Short abstract for this collection (optional)
-abstract: |
-  This is an example text for the abstract. It should be short and to the point.
-  A "Tell me more" link will appear if there is an additional description with a longer explanation.
+#abstract: |
+#  This is an example text for the abstract. It should be short and to the point.
+#  A "Tell me more" link will appear if there is an additional description with a longer explanation.
 
 # Description for this collection (optional)
-description: |
-  The description can be longer. Both **the abstract** *and the description* support Markdown,
-  including [links](https://google.es).
+#description: |
+#  The description can be longer. Both **the abstract** *and the description* support Markdown,
+#  including [links](https://google.es).
 
 # Customize the following prefix (will be prepended to the path of the building blocks):
-identifier-prefix: ogc.bbr.template.
+identifier-prefix: eu.usage-project.licensing.
 
 # List of imports ("default" is an alias for the main OGC Building Blocks Register)
 imports:
   - default
+  - https://ogcincubator.github.io/bblock-prov-schema/build/register.json
 
 # Whether to enable the (highly experimental) downcompiling of JSON schemas to an OpenAPI 3.0-compatible
 # version

@@ -1,0 +1,8 @@
+{
+  "@context": {
+    "uid": {
+      "@id": "rdf:value",
+      "@type": "@id"
+    }
+  }
+}

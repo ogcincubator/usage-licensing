@@ -1,0 +1,9 @@
+examples:
+  - title: Creative-Commons Attribution 4.0
+    snippets:
+      - language: json
+        ref: examples/cc-by4.0.json
+  - title: Creative-Commons Attribution-NonCommercial-ShareAlike 4.0
+    snippets:
+      - language: json
+        ref: examples/cc-by-nc-sa4.0.json

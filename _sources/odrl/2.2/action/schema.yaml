@@ -1,0 +1,24 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+
+$defs:
+  actionObject:
+    type: object
+    properties:
+      uid:
+        type: string
+      refinement:
+        oneOf:
+          - $ref: '../constraint/schema.yaml'
+          - type: array
+            items:
+              $ref: '../constraint/schema.yaml'
+
+oneOf:
+  - type: string
+  - type: array
+    items:
+      type: string
+  - $ref: '#/$defs/actionObject'
+  - type: array
+    items:
+      $ref: '#/$defs/actionObject'

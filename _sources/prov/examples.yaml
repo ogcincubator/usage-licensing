@@ -1,0 +1,7 @@
+examples:
+  - title: "Graz 30% of tree canopy coverage per district - simplified"
+    content: |-
+      ![Part of the BPMN corresponding to the example](examples/uc-gr-30-bpmn-simplified-cropped.png)
+    snippets:
+      - language: json
+        ref: examples/uc-gr-30-bpmn-simplified-cropped.json

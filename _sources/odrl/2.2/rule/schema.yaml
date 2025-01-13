@@ -1,0 +1,28 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+
+$defs:
+
+  rule:
+    type: object
+    required:
+      - action
+    action:
+      $ref: '#/$defs/action'
+    duty:
+      $ref: '#/$defs/rule'
+    remedy:
+      $ref: '#/$defs/rule'
+    target:
+      oneOf:
+        - type: string
+        - type: object
+
+  action:
+    oneOf:
+      - type: string
+      - type: array
+        minItems: 1
+        items:
+          type: string
+
+$ref: '#/$defs/rule'

@@ -1,0 +1,26 @@
+{
+  "@context": {
+    "Action": "odrl:Action",
+    "action": {
+      "@type": "@vocab",
+      "@id": "odrl:action"
+    },
+    "Duty": "odrl:Duty",
+    "duty": {
+      "@type": "@id",
+      "@id": "odrl:duty"
+    },
+    "consequence": {
+      "@type": "@id",
+      "@id": "odrl:consequence"
+    },
+    "remedy": {
+      "@type": "@id",
+      "@id": "odrl:remedy"
+    },
+    "target": {
+      "@type": "@id",
+      "@id": "odrl:target"
+    }
+  }
+}
