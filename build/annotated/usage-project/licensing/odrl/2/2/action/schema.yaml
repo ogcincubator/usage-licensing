@@ -9,10 +9,10 @@ $defs:
         x-jsonld-type: '@id'
       refinement:
         oneOf:
-        - $ref: https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/odrl/2/2/constraint/schema.yaml
+        - $ref: https://ogcincubator.github.io/usage-licensing/build/annotated/usage-project/licensing/odrl/2/2/constraint/schema.yaml
         - type: array
           items:
-            $ref: https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/odrl/2/2/constraint/schema.yaml
+            $ref: https://ogcincubator.github.io/usage-licensing/build/annotated/usage-project/licensing/odrl/2/2/constraint/schema.yaml
 oneOf:
 - type: string
 - type: array

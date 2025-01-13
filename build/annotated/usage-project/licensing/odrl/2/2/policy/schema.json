@@ -54,17 +54,17 @@
           "x-jsonld-type": "@id"
         },
         "permission": {
-          "$ref": "https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/odrl/2/2/rule/schema.json",
+          "$ref": "https://ogcincubator.github.io/usage-licensing/build/annotated/usage-project/licensing/odrl/2/2/rule/schema.json",
           "x-jsonld-type": "@id",
           "x-jsonld-id": "http://www.w3.org/ns/odrl/2/permission"
         },
         "obligation": {
-          "$ref": "https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/odrl/2/2/rule/schema.json",
+          "$ref": "https://ogcincubator.github.io/usage-licensing/build/annotated/usage-project/licensing/odrl/2/2/rule/schema.json",
           "x-jsonld-type": "@id",
           "x-jsonld-id": "http://www.w3.org/ns/odrl/2/obligation"
         },
         "prohibition": {
-          "$ref": "https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/odrl/2/2/rule/schema.json",
+          "$ref": "https://ogcincubator.github.io/usage-licensing/build/annotated/usage-project/licensing/odrl/2/2/rule/schema.json",
           "x-jsonld-type": "@id",
           "x-jsonld-id": "http://www.w3.org/ns/odrl/2/prohibition"
         },
@@ -83,12 +83,12 @@
         "constraint": {
           "oneOf": [
             {
-              "$ref": "https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/odrl/2/2/constraint/schema.json"
+              "$ref": "https://ogcincubator.github.io/usage-licensing/build/annotated/usage-project/licensing/odrl/2/2/constraint/schema.json"
             },
             {
               "type": "array",
               "items": {
-                "$ref": "https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/odrl/2/2/constraint/schema.json"
+                "$ref": "https://ogcincubator.github.io/usage-licensing/build/annotated/usage-project/licensing/odrl/2/2/constraint/schema.json"
               }
             }
           ],

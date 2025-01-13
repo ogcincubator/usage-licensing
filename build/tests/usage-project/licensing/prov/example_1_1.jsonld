@@ -1,5 +1,5 @@
 {
-  "@context": "https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/prov/context.jsonld",
+  "@context": "https://ogcincubator.github.io/usage-licensing/build/annotated/usage-project/licensing/prov/context.jsonld",
   "$schema": "https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.json",
   "$comment": "Provenance representation of UC_GR_30-300-BPMN_simplified",
   "id": "https://usage.geocat.live/catalogue/srv/api/records/600de8b7-7683-4cb1-bc8d-ca1ac5c2145b",

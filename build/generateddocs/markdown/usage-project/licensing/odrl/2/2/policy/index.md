@@ -70,7 +70,7 @@ A Policy according to the Open Digital Rights Language (ODRL) version 2.2
 #### jsonld
 ```jsonld
 {
-  "@context": "https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/odrl/2/2/policy/context.jsonld",
+  "@context": "https://ogcincubator.github.io/usage-licensing/build/annotated/usage-project/licensing/odrl/2/2/policy/context.jsonld",
   "uid": "http://purl.org/NET/rdflicense/cc-by4.0",
   "type": "Policy",
   "legalcode": [
@@ -660,7 +660,7 @@ Creative Commons kan bli kontaktet på creativecommons.org.\r
 #### jsonld
 ```jsonld
 {
-  "@context": "https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/odrl/2/2/policy/context.jsonld",
+  "@context": "https://ogcincubator.github.io/usage-licensing/build/annotated/usage-project/licensing/odrl/2/2/policy/context.jsonld",
   "uid": "http://purl.org/NET/rdflicense/cc-by-nc-sa4.0",
   "type": "Policy",
   "legalcode": {
@@ -868,15 +868,15 @@ $defs:
         x-jsonld-id: http://xmlns.com/foaf/0.1/logo
         x-jsonld-type: '@id'
       permission:
-        $ref: https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/odrl/2/2/rule/schema.yaml
+        $ref: https://ogcincubator.github.io/usage-licensing/build/annotated/usage-project/licensing/odrl/2/2/rule/schema.yaml
         x-jsonld-type: '@id'
         x-jsonld-id: http://www.w3.org/ns/odrl/2/permission
       obligation:
-        $ref: https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/odrl/2/2/rule/schema.yaml
+        $ref: https://ogcincubator.github.io/usage-licensing/build/annotated/usage-project/licensing/odrl/2/2/rule/schema.yaml
         x-jsonld-type: '@id'
         x-jsonld-id: http://www.w3.org/ns/odrl/2/obligation
       prohibition:
-        $ref: https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/odrl/2/2/rule/schema.yaml
+        $ref: https://ogcincubator.github.io/usage-licensing/build/annotated/usage-project/licensing/odrl/2/2/rule/schema.yaml
         x-jsonld-type: '@id'
         x-jsonld-id: http://www.w3.org/ns/odrl/2/prohibition
       inheritFrom:
@@ -887,10 +887,10 @@ $defs:
         x-jsonld-id: http://www.w3.org/ns/odrl/2/inheritFrom
       constraint:
         oneOf:
-        - $ref: https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/odrl/2/2/constraint/schema.yaml
+        - $ref: https://ogcincubator.github.io/usage-licensing/build/annotated/usage-project/licensing/odrl/2/2/constraint/schema.yaml
         - type: array
           items:
-            $ref: https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/odrl/2/2/constraint/schema.yaml
+            $ref: https://ogcincubator.github.io/usage-licensing/build/annotated/usage-project/licensing/odrl/2/2/constraint/schema.yaml
         x-jsonld-type: '@id'
         x-jsonld-id: http://www.w3.org/ns/odrl/2/constraint
       target:
@@ -1183,8 +1183,8 @@ x-jsonld-prefixes:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/odrl/2/2/policy/schema.json)
-* JSON version: [schema.json](https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/odrl/2/2/policy/schema.yaml)
+* YAML version: [schema.yaml](https://ogcincubator.github.io/usage-licensing/build/annotated/usage-project/licensing/odrl/2/2/policy/schema.json)
+* JSON version: [schema.json](https://ogcincubator.github.io/usage-licensing/build/annotated/usage-project/licensing/odrl/2/2/policy/schema.yaml)
 
 
 # JSON-LD Context
@@ -1626,7 +1626,7 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/odrl/2/2/policy/context.jsonld)
+[context.jsonld](https://ogcincubator.github.io/usage-licensing/build/annotated/usage-project/licensing/odrl/2/2/policy/context.jsonld)
 
 ## Sources
 

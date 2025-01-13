@@ -2,7 +2,7 @@
   "title": "Validation report for eu.usage-project.licensing.prov - USAGE Provenance Schema",
   "bblockName": "USAGE Provenance Schema",
   "bblockId": "eu.usage-project.licensing.prov",
-  "generated": "2025-01-13T09:27:59.518211+00:00",
+  "generated": "2025-01-13T09:38:20.050205+00:00",
   "result": true,
   "items": [
     {
@@ -10,7 +10,7 @@
         "type": "EXAMPLE",
         "requireFail": false,
         "filename": "build/tests/usage-project/licensing/prov/example_1_1.json",
-        "url": "https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/tests/usage-project/licensing/prov/example_1_1.json",
+        "url": "https://ogcincubator.github.io/usage-licensing/build/tests/usage-project/licensing/prov/example_1_1.json",
         "exampleIndex": 1,
         "snippetIndex": 1,
         "language": "application/json"

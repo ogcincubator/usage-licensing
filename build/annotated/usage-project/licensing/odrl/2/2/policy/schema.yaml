@@ -38,15 +38,15 @@ $defs:
         x-jsonld-id: http://xmlns.com/foaf/0.1/logo
         x-jsonld-type: '@id'
       permission:
-        $ref: https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/odrl/2/2/rule/schema.yaml
+        $ref: https://ogcincubator.github.io/usage-licensing/build/annotated/usage-project/licensing/odrl/2/2/rule/schema.yaml
         x-jsonld-type: '@id'
         x-jsonld-id: http://www.w3.org/ns/odrl/2/permission
       obligation:
-        $ref: https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/odrl/2/2/rule/schema.yaml
+        $ref: https://ogcincubator.github.io/usage-licensing/build/annotated/usage-project/licensing/odrl/2/2/rule/schema.yaml
         x-jsonld-type: '@id'
         x-jsonld-id: http://www.w3.org/ns/odrl/2/obligation
       prohibition:
-        $ref: https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/odrl/2/2/rule/schema.yaml
+        $ref: https://ogcincubator.github.io/usage-licensing/build/annotated/usage-project/licensing/odrl/2/2/rule/schema.yaml
         x-jsonld-type: '@id'
         x-jsonld-id: http://www.w3.org/ns/odrl/2/prohibition
       inheritFrom:
@@ -57,10 +57,10 @@ $defs:
         x-jsonld-id: http://www.w3.org/ns/odrl/2/inheritFrom
       constraint:
         oneOf:
-        - $ref: https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/odrl/2/2/constraint/schema.yaml
+        - $ref: https://ogcincubator.github.io/usage-licensing/build/annotated/usage-project/licensing/odrl/2/2/constraint/schema.yaml
         - type: array
           items:
-            $ref: https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/odrl/2/2/constraint/schema.yaml
+            $ref: https://ogcincubator.github.io/usage-licensing/build/annotated/usage-project/licensing/odrl/2/2/constraint/schema.yaml
         x-jsonld-type: '@id'
         x-jsonld-id: http://www.w3.org/ns/odrl/2/constraint
       target:

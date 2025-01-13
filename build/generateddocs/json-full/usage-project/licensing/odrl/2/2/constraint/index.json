@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-register",
   "version": "0.1",
-  "dateOfLastChange": "2025-01-13",
+  "dateOfLastChange": "2025-01-09",
   "sources": [
     {
       "title": "ODRL Information Model 2.2",
@@ -26,13 +26,13 @@
   ],
   "shaclRules": {},
   "schema": {
-    "application/yaml": "https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/odrl/2/2/constraint/schema.yaml",
-    "application/json": "https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/odrl/2/2/constraint/schema.json"
+    "application/yaml": "https://ogcincubator.github.io/usage-licensing/build/annotated/usage-project/licensing/odrl/2/2/constraint/schema.yaml",
+    "application/json": "https://ogcincubator.github.io/usage-licensing/build/annotated/usage-project/licensing/odrl/2/2/constraint/schema.json"
   },
-  "sourceSchema": "https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/_sources/odrl/2.2/constraint/schema.yaml",
-  "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/_sources/odrl/2.2/constraint/",
+  "sourceSchema": "https://ogcincubator.github.io/usage-licensing/_sources/odrl/2.2/constraint/schema.yaml",
+  "sourceFiles": "https://ogcincubator.github.io/usage-licensing/_sources/odrl/2.2/constraint/",
   "rdfData": [
-    "https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/data.ttl"
+    "https://ogcincubator.github.io/usage-licensing/data.ttl"
   ],
   "validationPassed": true,
   "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\n$comment: Stub\n",

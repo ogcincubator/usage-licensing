@@ -2,7 +2,7 @@
   "title": "Validation report for eu.usage-project.licensing.odrl.2.2.policy - ODRL 2.2 Policy",
   "bblockName": "ODRL 2.2 Policy",
   "bblockId": "eu.usage-project.licensing.odrl.2.2.policy",
-  "generated": "2025-01-13T09:27:59.389174+00:00",
+  "generated": "2025-01-13T09:38:19.904674+00:00",
   "result": true,
   "items": [
     {
@@ -10,7 +10,7 @@
         "type": "EXAMPLE",
         "requireFail": false,
         "filename": "build/tests/usage-project/licensing/odrl/2/2/policy/example_1_1.json",
-        "url": "https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/tests/usage-project/licensing/odrl/2/2/policy/example_1_1.json",
+        "url": "https://ogcincubator.github.io/usage-licensing/build/tests/usage-project/licensing/odrl/2/2/policy/example_1_1.json",
         "exampleIndex": 1,
         "snippetIndex": 1,
         "language": "application/json"
@@ -65,7 +65,7 @@
         "type": "EXAMPLE",
         "requireFail": false,
         "filename": "build/tests/usage-project/licensing/odrl/2/2/policy/example_2_1.json",
-        "url": "https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/tests/usage-project/licensing/odrl/2/2/policy/example_2_1.json",
+        "url": "https://ogcincubator.github.io/usage-licensing/build/tests/usage-project/licensing/odrl/2/2/policy/example_2_1.json",
         "exampleIndex": 2,
         "snippetIndex": 1,
         "language": "application/json"

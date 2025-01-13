@@ -1,5 +1,5 @@
 Validation report for eu.usage-project.licensing.prov - USAGE Provenance Schema
-Generated 2025-01-13T09:27:59.518144+00:00
+Generated 2025-01-13T09:38:20.050123+00:00
 === Files ===
 Using example_1_1.json from examples
 JSON-LD context is present - uplifting

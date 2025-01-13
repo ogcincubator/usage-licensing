@@ -48,7 +48,7 @@ Schema for a provenance chain based on PROV, with additional USAGE terms
 #### jsonld
 ```jsonld
 {
-  "@context": "https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/prov/context.jsonld",
+  "@context": "https://ogcincubator.github.io/usage-licensing/build/annotated/usage-project/licensing/prov/context.jsonld",
   "$schema": "https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.json",
   "$comment": "Provenance representation of UC_GR_30-300-BPMN_simplified",
   "id": "https://usage.geocat.live/catalogue/srv/api/records/600de8b7-7683-4cb1-bc8d-ca1ac5c2145b",
@@ -132,8 +132,8 @@ x-jsonld-prefixes:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/prov/schema.json)
-* JSON version: [schema.json](https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/prov/schema.yaml)
+* YAML version: [schema.yaml](https://ogcincubator.github.io/usage-licensing/build/annotated/usage-project/licensing/prov/schema.json)
+* JSON version: [schema.json](https://ogcincubator.github.io/usage-licensing/build/annotated/usage-project/licensing/prov/schema.yaml)
 
 
 # JSON-LD Context
@@ -695,7 +695,7 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/prov/context.jsonld)
+[context.jsonld](https://ogcincubator.github.io/usage-licensing/build/annotated/usage-project/licensing/prov/context.jsonld)
 
 ## Sources
 

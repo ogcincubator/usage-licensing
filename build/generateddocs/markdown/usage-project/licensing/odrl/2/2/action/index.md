@@ -21,10 +21,10 @@ $defs:
         x-jsonld-type: '@id'
       refinement:
         oneOf:
-        - $ref: https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/odrl/2/2/constraint/schema.yaml
+        - $ref: https://ogcincubator.github.io/usage-licensing/build/annotated/usage-project/licensing/odrl/2/2/constraint/schema.yaml
         - type: array
           items:
-            $ref: https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/odrl/2/2/constraint/schema.yaml
+            $ref: https://ogcincubator.github.io/usage-licensing/build/annotated/usage-project/licensing/odrl/2/2/constraint/schema.yaml
 oneOf:
 - type: string
 - type: array
@@ -39,8 +39,8 @@ oneOf:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/odrl/2/2/action/schema.json)
-* JSON version: [schema.json](https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/odrl/2/2/action/schema.yaml)
+* YAML version: [schema.yaml](https://ogcincubator.github.io/usage-licensing/build/annotated/usage-project/licensing/odrl/2/2/action/schema.json)
+* JSON version: [schema.json](https://ogcincubator.github.io/usage-licensing/build/annotated/usage-project/licensing/odrl/2/2/action/schema.yaml)
 
 
 # JSON-LD Context
@@ -58,7 +58,7 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/odrl/2/2/action/context.jsonld)
+[context.jsonld](https://ogcincubator.github.io/usage-licensing/build/annotated/usage-project/licensing/odrl/2/2/action/context.jsonld)
 
 ## Sources
 

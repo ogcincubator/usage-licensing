@@ -1,5 +1,5 @@
 {
-  "@context": "https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/odrl/2/2/policy/context.jsonld",
+  "@context": "https://ogcincubator.github.io/usage-licensing/build/annotated/usage-project/licensing/odrl/2/2/policy/context.jsonld",
   "uid": "http://purl.org/NET/rdflicense/cc-by4.0",
   "type": "Policy",
   "legalcode": [
