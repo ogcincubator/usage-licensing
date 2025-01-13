@@ -1,0 +1,16 @@
+path	@id
+/uid	@id
+/type	@type
+/label	http://www.w3.org/2000/01/rdf-schema#label
+/label/@language	
+/label/@value	
+/legalcode	http://creativecommons.org/ns#legalcode
+/hasVersion	http://purl.org/dc/terms/hasVersion
+/hasLanguage	http://purl.org/dc/terms/language
+/logo	http://xmlns.com/foaf/0.1/logo
+/permission	http://www.w3.org/ns/odrl/2/permission
+/obligation	http://www.w3.org/ns/odrl/2/obligation
+/prohibition	http://www.w3.org/ns/odrl/2/prohibition
+/inheritFrom	http://www.w3.org/ns/odrl/2/inheritFrom
+/constraint	http://www.w3.org/ns/odrl/2/constraint
+/target	http://www.w3.org/ns/odrl/2/target

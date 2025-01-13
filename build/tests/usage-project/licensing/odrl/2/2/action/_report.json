@@ -1,0 +1,14 @@
+{
+  "title": "Validation report for eu.usage-project.licensing.odrl.2.2.action - ODRL 2.2 Action",
+  "bblockName": "ODRL 2.2 Action",
+  "bblockId": "eu.usage-project.licensing.odrl.2.2.action",
+  "generated": "2025-01-13T09:27:59.334378+00:00",
+  "result": true,
+  "items": [],
+  "globalErrors": {},
+  "counts": {
+    "total": 0,
+    "passed": 0,
+    "failed": 0
+  }
+}

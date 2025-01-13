@@ -1,0 +1,22 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix oa: <http://www.w3.org/ns/oa#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdflicense: <http://purl.org/NET/rdflicense/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://usage.geocat.live/catalogue/srv/api/records/600de8b7-7683-4cb1-bc8d-ca1ac5c2145b> dct:title "Graz 30% tree canopy rule (district level)" ;
+    prov:wasGeneratedBy [ a prov:Activity ;
+            dct:description "Calculate the % of coverage of high vegetation in each district and check if the percentage is >30%. Assign the characteristics to the district polygons." ;
+            rdfs:seeAlso [ rdfs:label "30 percent criterion" ;
+                    oa:hasTarget <https://usage.geocat.live/catalogue/srv/api/records/8309b176-983c-4460-8361-d55bd8829c9c> ] ;
+            prov:used <https://usage.geocat.live/catalogue/srv/api/records/4f18ca71-38e9-4d55-9064-bc5085a50608>,
+                <https://usage.geocat.live/catalogue/srv/api/records/e6991462-e031-4deb-a362-c5b55139316a> ] .
+
+<https://usage.geocat.live/catalogue/srv/api/records/4f18ca71-38e9-4d55-9064-bc5085a50608> a prov:Entity ;
+    dct:license rdflicense:cc-by4.0 ;
+    dct:title "Graz districts" .
+
+<https://usage.geocat.live/catalogue/srv/api/records/e6991462-e031-4deb-a362-c5b55139316a> a prov:Entity ;
+    dct:license rdflicense:cc-by-nc4.0 ;
+    dct:title "Graz surface material classification map" .
+

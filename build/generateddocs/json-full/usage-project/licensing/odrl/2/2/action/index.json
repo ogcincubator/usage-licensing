@@ -1,0 +1,46 @@
+
+
+{
+  "itemIdentifier": "eu.usage-project.licensing.odrl.2.2.action",
+  "name": "ODRL 2.2 Action",
+  "abstract": "An Action according to the Open Digital Rights Language (ODRL) version 2.2.",
+  "status": "under-development",
+  "dateTimeAddition": "2025-01-06T13:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-building-block-register",
+  "version": "0.1",
+  "dateOfLastChange": "2025-01-13",
+  "sources": [
+    {
+      "title": "ODRL Information Model 2.2",
+      "link": "https://www.w3.org/TR/odrl-model/"
+    },
+    {
+      "title": "ODRL Vocabulary & Expression 2.2",
+      "link": "https://www.w3.org/TR/odrl-vocab/"
+    }
+  ],
+  "tags": [
+    "licensing",
+    "odrl"
+  ],
+  "shaclRules": {},
+  "dependsOn": [
+    "eu.usage-project.licensing.odrl.2.2.constraint"
+  ],
+  "ldContext": "https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/odrl/2/2/action/context.jsonld",
+  "schema": {
+    "application/yaml": "https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/odrl/2/2/action/schema.yaml",
+    "application/json": "https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/odrl/2/2/action/schema.json"
+  },
+  "sourceSchema": "https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/_sources/odrl/2.2/action/schema.yaml",
+  "sourceLdContext": "https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/_sources/odrl/2.2/action/context.jsonld",
+  "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/_sources/odrl/2.2/action/",
+  "rdfData": [
+    "https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/data.ttl"
+  ],
+  "validationPassed": true,
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\n$defs:\n  actionObject:\n    type: object\n    properties:\n      uid:\n        type: string\n        x-jsonld-id: rdf:value\n        x-jsonld-type: '@id'\n      refinement:\n        oneOf:\n        - $ref: https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/odrl/2/2/constraint/schema.yaml\n        - type: array\n          items:\n            $ref: https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/odrl/2/2/constraint/schema.yaml\noneOf:\n- type: string\n- type: array\n  items:\n    type: string\n- $ref: '#/$defs/actionObject'\n- type: array\n  items:\n    $ref: '#/$defs/actionObject'\n",
+  "gitRepository": "https://github.com/ogcincubator/usage-licensing",
+  "gitPath": "_sources/odrl/2.2/action"
+}

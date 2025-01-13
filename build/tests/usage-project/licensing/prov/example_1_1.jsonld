@@ -1,0 +1,30 @@
+{
+  "@context": "https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/prov/context.jsonld",
+  "$schema": "https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.json",
+  "$comment": "Provenance representation of UC_GR_30-300-BPMN_simplified",
+  "id": "https://usage.geocat.live/catalogue/srv/api/records/600de8b7-7683-4cb1-bc8d-ca1ac5c2145b",
+  "type": "Entity",
+  "title": "Graz 30% tree canopy rule (district level)",
+  "wasGeneratedBy": {
+    "featureType": "Activity",
+    "description": "Calculate the % of coverage of high vegetation in each district and check if the percentage is >30%. Assign the characteristics to the district polygons.",
+    "links": {
+      "title": "30 percent criterion",
+      "href": "https://usage.geocat.live/catalogue/srv/api/records/8309b176-983c-4460-8361-d55bd8829c9c"
+    },
+    "used": [
+      {
+        "id": "https://usage.geocat.live/catalogue/srv/api/records/4f18ca71-38e9-4d55-9064-bc5085a50608",
+        "featureType": "Entity",
+        "title": "Graz districts",
+        "license": "cc-by4.0"
+      },
+      {
+        "id": "https://usage.geocat.live/catalogue/srv/api/records/e6991462-e031-4deb-a362-c5b55139316a",
+        "featureType": "Entity",
+        "title": "Graz surface material classification map",
+        "license": "cc-by-nc4.0"
+      }
+    ]
+  }
+}

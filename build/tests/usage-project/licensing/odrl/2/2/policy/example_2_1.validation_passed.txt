@@ -1,0 +1,13 @@
+Validation report for eu.usage-project.licensing.odrl.2.2.policy - ODRL 2.2 Policy
+Generated 2025-01-13T09:27:59.389114+00:00
+=== Files ===
+Using example_2_1.json from examples
+JSON-LD context is present - uplifting
+Output JSON-LD example_2_1.jsonld created
+Output Turtle example_2_1.ttl created
+=== End Files ===
+
+=== JSON Schema ===
+Validation passed
+=== End JSON Schema ===
+

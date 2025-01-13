@@ -1,0 +1,72 @@
+
+
+{
+  "itemIdentifier": "eu.usage-project.licensing.prov",
+  "name": "USAGE Provenance Schema",
+  "abstract": "Schema for a provenance chain based on PROV, with additional USAGE terms",
+  "status": "under-development",
+  "dateTimeAddition": "2025-01-06T13:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-building-block-register",
+  "version": "0.1",
+  "dateOfLastChange": "2025-01-13",
+  "sources": [
+    {
+      "title": "Provenance Chain building block",
+      "link": "https://ogcincubator.github.io/bblock-prov-schema/bblock/ogc.ogc-utils.prov/"
+    },
+    {
+      "title": "PROV-O: The PROV Ontology",
+      "link": "https://www.w3.org/TR/prov-o/"
+    }
+  ],
+  "tags": [
+    "provenance",
+    "usage",
+    "prov-o"
+  ],
+  "shaclRules": {},
+  "dependsOn": [
+    "ogc.ogc-utils.prov"
+  ],
+  "ldContext": "https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/prov/context.jsonld",
+  "schema": {
+    "application/yaml": "https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/prov/schema.yaml",
+    "application/json": "https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/prov/schema.json"
+  },
+  "sourceSchema": "https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/_sources/prov/schema.yaml",
+  "sourceLdContext": "https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/_sources/prov/context.jsonld",
+  "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/_sources/prov/",
+  "rdfData": [
+    "https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/data.ttl"
+  ],
+  "validationPassed": true,
+  "testOutputs": "https://github.com/ogcincubator/usage-licensing/blob/master/build/tests/usage-project/licensing/prov/",
+  "examples": [
+    {
+      "title": "Graz 30% of tree canopy coverage per district - simplified",
+      "content": "![Part of the BPMN corresponding to the example](examples/uc-gr-30-bpmn-simplified-cropped.png)",
+      "snippets": [
+        {
+          "language": "json",
+          "ref": "examples/uc-gr-30-bpmn-simplified-cropped.json",
+          "code": "{\n  \"$schema\": \"https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.json\",\n  \"$comment\": \"Provenance representation of UC_GR_30-300-BPMN_simplified\",\n\n  \"id\": \"https://usage.geocat.live/catalogue/srv/api/records/600de8b7-7683-4cb1-bc8d-ca1ac5c2145b\",\n  \"type\": \"Entity\",\n  \"title\": \"Graz 30% tree canopy rule (district level)\",\n  \"wasGeneratedBy\": {\n    \"featureType\": \"Activity\",\n    \"description\": \"Calculate the % of coverage of high vegetation in each district and check if the percentage is >30%. Assign the characteristics to the district polygons.\",\n    \"links\": {\n      \"title\": \"30 percent criterion\",\n      \"href\": \"https://usage.geocat.live/catalogue/srv/api/records/8309b176-983c-4460-8361-d55bd8829c9c\"\n    },\n    \"used\": [\n      {\n        \"id\": \"https://usage.geocat.live/catalogue/srv/api/records/4f18ca71-38e9-4d55-9064-bc5085a50608\",\n        \"featureType\": \"Entity\",\n        \"title\": \"Graz districts\",\n        \"license\": \"cc-by4.0\"\n      },\n      {\n        \"id\": \"https://usage.geocat.live/catalogue/srv/api/records/e6991462-e031-4deb-a362-c5b55139316a\",\n        \"featureType\": \"Entity\",\n        \"title\": \"Graz surface material classification map\",\n        \"license\": \"cc-by-nc4.0\"\n      }\n    ]\n  }\n}",
+          "url": "https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/tests/usage-project/licensing/prov/example_1_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"@context\": \"https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/prov/context.jsonld\",\n  \"$schema\": \"https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.json\",\n  \"$comment\": \"Provenance representation of UC_GR_30-300-BPMN_simplified\",\n  \"id\": \"https://usage.geocat.live/catalogue/srv/api/records/600de8b7-7683-4cb1-bc8d-ca1ac5c2145b\",\n  \"type\": \"Entity\",\n  \"title\": \"Graz 30% tree canopy rule (district level)\",\n  \"wasGeneratedBy\": {\n    \"featureType\": \"Activity\",\n    \"description\": \"Calculate the % of coverage of high vegetation in each district and check if the percentage is >30%. Assign the characteristics to the district polygons.\",\n    \"links\": {\n      \"title\": \"30 percent criterion\",\n      \"href\": \"https://usage.geocat.live/catalogue/srv/api/records/8309b176-983c-4460-8361-d55bd8829c9c\"\n    },\n    \"used\": [\n      {\n        \"id\": \"https://usage.geocat.live/catalogue/srv/api/records/4f18ca71-38e9-4d55-9064-bc5085a50608\",\n        \"featureType\": \"Entity\",\n        \"title\": \"Graz districts\",\n        \"license\": \"cc-by4.0\"\n      },\n      {\n        \"id\": \"https://usage.geocat.live/catalogue/srv/api/records/e6991462-e031-4deb-a362-c5b55139316a\",\n        \"featureType\": \"Entity\",\n        \"title\": \"Graz surface material classification map\",\n        \"license\": \"cc-by-nc4.0\"\n      }\n    ]\n  }\n}",
+          "url": "https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/tests/usage-project/licensing/prov/example_1_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix dct: <http://purl.org/dc/terms/> .\n@prefix oa: <http://www.w3.org/ns/oa#> .\n@prefix prov: <http://www.w3.org/ns/prov#> .\n@prefix rdflicense: <http://purl.org/NET/rdflicense/> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n\n<https://usage.geocat.live/catalogue/srv/api/records/600de8b7-7683-4cb1-bc8d-ca1ac5c2145b> dct:title \"Graz 30% tree canopy rule (district level)\" ;\n    prov:wasGeneratedBy [ a prov:Activity ;\n            dct:description \"Calculate the % of coverage of high vegetation in each district and check if the percentage is >30%. Assign the characteristics to the district polygons.\" ;\n            rdfs:seeAlso [ rdfs:label \"30 percent criterion\" ;\n                    oa:hasTarget <https://usage.geocat.live/catalogue/srv/api/records/8309b176-983c-4460-8361-d55bd8829c9c> ] ;\n            prov:used <https://usage.geocat.live/catalogue/srv/api/records/4f18ca71-38e9-4d55-9064-bc5085a50608>,\n                <https://usage.geocat.live/catalogue/srv/api/records/e6991462-e031-4deb-a362-c5b55139316a> ] .\n\n<https://usage.geocat.live/catalogue/srv/api/records/4f18ca71-38e9-4d55-9064-bc5085a50608> a prov:Entity ;\n    dct:license rdflicense:cc-by4.0 ;\n    dct:title \"Graz districts\" .\n\n<https://usage.geocat.live/catalogue/srv/api/records/e6991462-e031-4deb-a362-c5b55139316a> a prov:Entity ;\n    dct:license rdflicense:cc-by-nc4.0 ;\n    dct:title \"Graz surface material classification map\" .\n\n",
+          "url": "https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/tests/usage-project/licensing/prov/example_1_1.ttl"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\n$comment: Reuse provenance chain schema\noneOf:\n- $ref: https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml\n- type: array\n  items:\n    $ref: https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml\nx-jsonld-extra-terms:\n  title: dct:title\n  description: dct:description\n  license:\n    x-jsonld-id: dct:license\n    x-jsonld-type: '@id'\n    x-jsonld-context:\n      '@base': http://purl.org/NET/rdflicense/\nx-jsonld-prefixes:\n  rdflicense: http://purl.org/NET/rdflicense/\n  odrl: http://www.w3.org/ns/odrl/2/\n",
+  "gitRepository": "https://github.com/ogcincubator/usage-licensing",
+  "gitPath": "_sources/prov"
+}

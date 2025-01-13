@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "actionObject": {
+      "type": "object",
+      "properties": {
+        "uid": {
+          "type": "string",
+          "x-jsonld-id": "rdf:value",
+          "x-jsonld-type": "@id"
+        },
+        "refinement": {
+          "oneOf": [
+            {
+              "$ref": "https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/odrl/2/2/constraint/schema.json"
+            },
+            {
+              "type": "array",
+              "items": {
+                "$ref": "https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/odrl/2/2/constraint/schema.json"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "oneOf": [
+    {
+      "type": "string"
+    },
+    {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    {
+      "$ref": "#/$defs/actionObject"
+    },
+    {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/actionObject"
+      }
+    }
+  ]
+}

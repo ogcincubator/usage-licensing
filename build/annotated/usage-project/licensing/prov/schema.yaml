@@ -1,0 +1,18 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+$comment: Reuse provenance chain schema
+oneOf:
+- $ref: https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml
+- type: array
+  items:
+    $ref: https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov/schema.yaml
+x-jsonld-extra-terms:
+  title: dct:title
+  description: dct:description
+  license:
+    x-jsonld-id: dct:license
+    x-jsonld-type: '@id'
+    x-jsonld-context:
+      '@base': http://purl.org/NET/rdflicense/
+x-jsonld-prefixes:
+  rdflicense: http://purl.org/NET/rdflicense/
+  odrl: http://www.w3.org/ns/odrl/2/

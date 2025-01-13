@@ -1,0 +1,350 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+$defs:
+  policy:
+    type: object
+    required:
+    - uid
+    - type
+    properties:
+      uid:
+        type: string
+        x-jsonld-id: '@id'
+      type:
+        oneOf:
+        - type: string
+          const: Policy
+        - type: array
+          items:
+            type: string
+          contains:
+            const: Policy
+        x-jsonld-id: '@type'
+      label:
+        $ref: '#/$defs/multi-lang-string'
+        x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#label
+      legalcode:
+        $ref: '#/$defs/multi-lang-string'
+        x-jsonld-id: http://creativecommons.org/ns#legalcode
+      hasVersion:
+        type: string
+        x-jsonld-id: http://purl.org/dc/terms/hasVersion
+      hasLanguage:
+        type: string
+        x-jsonld-id: http://purl.org/dc/terms/language
+        x-jsonld-type: '@id'
+        x-jsonld-base: http://www.lexvo.org/page/iso639-3/
+      logo:
+        type: string
+        x-jsonld-id: http://xmlns.com/foaf/0.1/logo
+        x-jsonld-type: '@id'
+      permission:
+        $ref: https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/odrl/2/2/rule/schema.yaml
+        x-jsonld-type: '@id'
+        x-jsonld-id: http://www.w3.org/ns/odrl/2/permission
+      obligation:
+        $ref: https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/odrl/2/2/rule/schema.yaml
+        x-jsonld-type: '@id'
+        x-jsonld-id: http://www.w3.org/ns/odrl/2/obligation
+      prohibition:
+        $ref: https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/odrl/2/2/rule/schema.yaml
+        x-jsonld-type: '@id'
+        x-jsonld-id: http://www.w3.org/ns/odrl/2/prohibition
+      inheritFrom:
+        oneOf:
+        - $ref: '#/$defs/policy'
+        - type: string
+        x-jsonld-type: '@id'
+        x-jsonld-id: http://www.w3.org/ns/odrl/2/inheritFrom
+      constraint:
+        oneOf:
+        - $ref: https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/odrl/2/2/constraint/schema.yaml
+        - type: array
+          items:
+            $ref: https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/odrl/2/2/constraint/schema.yaml
+        x-jsonld-type: '@id'
+        x-jsonld-id: http://www.w3.org/ns/odrl/2/constraint
+      target:
+        oneOf:
+        - type: string
+        - type: object
+        - type: array
+          items:
+            oneOf:
+            - type: string
+            - type: object
+        x-jsonld-type: '@id'
+        x-jsonld-id: http://www.w3.org/ns/odrl/2/target
+  lang-string:
+    oneOf:
+    - type: string
+    - type: object
+      required:
+      - '@value'
+      properties:
+        '@language':
+          type: string
+        '@value':
+          type: string
+  multi-lang-string:
+    oneOf:
+    - $ref: '#/$defs/lang-string'
+    - type: array
+      items:
+        $ref: '#/$defs/lang-string'
+$ref: '#/$defs/policy'
+x-jsonld-extra-terms:
+  Policy: http://www.w3.org/ns/odrl/2/Policy
+  Rule: http://www.w3.org/ns/odrl/2/Rule
+  profile:
+    x-jsonld-type: '@id'
+    x-jsonld-id: http://www.w3.org/ns/odrl/2/profile
+  ConflictTerm: http://www.w3.org/ns/odrl/2/ConflictTerm
+  conflict:
+    x-jsonld-type: '@vocab'
+    x-jsonld-id: http://www.w3.org/ns/odrl/2/conflict
+  perm: http://www.w3.org/ns/odrl/2/perm
+  prohibit: http://www.w3.org/ns/odrl/2/prohibit
+  invalid: http://www.w3.org/ns/odrl/2/invalid
+  Agreement: http://www.w3.org/ns/odrl/2/Agreement
+  Assertion: http://www.w3.org/ns/odrl/2/Assertion
+  Offer: http://www.w3.org/ns/odrl/2/Offer
+  Privacy: http://www.w3.org/ns/odrl/2/Privacy
+  Request: http://www.w3.org/ns/odrl/2/Request
+  Set: http://www.w3.org/ns/odrl/2/Set
+  Ticket: http://www.w3.org/ns/odrl/2/Ticket
+  Asset: http://www.w3.org/ns/odrl/2/Asset
+  AssetCollection: http://www.w3.org/ns/odrl/2/AssetCollection
+  relation:
+    x-jsonld-type: '@id'
+    x-jsonld-id: http://www.w3.org/ns/odrl/2/relation
+  hasPolicy:
+    x-jsonld-type: '@id'
+    x-jsonld-id: http://www.w3.org/ns/odrl/2/hasPolicy
+  output:
+    x-jsonld-type: '@id'
+    x-jsonld-id: http://www.w3.org/ns/odrl/2/output
+  partOf:
+    x-jsonld-type: '@id'
+    x-jsonld-id: http://www.w3.org/ns/odrl/2/partOf
+  source:
+    x-jsonld-type: '@id'
+    x-jsonld-id: http://www.w3.org/ns/odrl/2/source
+  Party: http://www.w3.org/ns/odrl/2/Party
+  PartyCollection: http://www.w3.org/ns/odrl/2/PartyCollection
+  function:
+    x-jsonld-type: '@vocab'
+    x-jsonld-id: http://www.w3.org/ns/odrl/2/function
+  PartyScope: http://www.w3.org/ns/odrl/2/PartyScope
+  assignee:
+    x-jsonld-type: '@id'
+    x-jsonld-id: http://www.w3.org/ns/odrl/2/assignee
+  assigner:
+    x-jsonld-type: '@id'
+    x-jsonld-id: http://www.w3.org/ns/odrl/2/assigner
+  assigneeOf:
+    x-jsonld-type: '@id'
+    x-jsonld-id: http://www.w3.org/ns/odrl/2/assigneeOf
+  assignerOf:
+    x-jsonld-type: '@id'
+    x-jsonld-id: http://www.w3.org/ns/odrl/2/assignerOf
+  attributedParty:
+    x-jsonld-type: '@id'
+    x-jsonld-id: http://www.w3.org/ns/odrl/2/attributedParty
+  attributingParty:
+    x-jsonld-type: '@id'
+    x-jsonld-id: http://www.w3.org/ns/odrl/2/attributingParty
+  compensatedParty:
+    x-jsonld-type: '@id'
+    x-jsonld-id: http://www.w3.org/ns/odrl/2/compensatedParty
+  compensatingParty:
+    x-jsonld-type: '@id'
+    x-jsonld-id: http://www.w3.org/ns/odrl/2/compensatingParty
+  consentingParty:
+    x-jsonld-type: '@id'
+    x-jsonld-id: http://www.w3.org/ns/odrl/2/consentingParty
+  consentedParty:
+    x-jsonld-type: '@id'
+    x-jsonld-id: http://www.w3.org/ns/odrl/2/consentedParty
+  informedParty:
+    x-jsonld-type: '@id'
+    x-jsonld-id: http://www.w3.org/ns/odrl/2/informedParty
+  informingParty:
+    x-jsonld-type: '@id'
+    x-jsonld-id: http://www.w3.org/ns/odrl/2/informingParty
+  trackingParty:
+    x-jsonld-type: '@id'
+    x-jsonld-id: http://www.w3.org/ns/odrl/2/trackingParty
+  trackedParty:
+    x-jsonld-type: '@id'
+    x-jsonld-id: http://www.w3.org/ns/odrl/2/trackedParty
+  contractingParty:
+    x-jsonld-type: '@id'
+    x-jsonld-id: http://www.w3.org/ns/odrl/2/contractingParty
+  contractedParty:
+    x-jsonld-type: '@id'
+    x-jsonld-id: http://www.w3.org/ns/odrl/2/contractedParty
+  Action: http://www.w3.org/ns/odrl/2/Action
+  action:
+    x-jsonld-type: '@vocab'
+    x-jsonld-id: http://www.w3.org/ns/odrl/2/action
+  includedIn:
+    x-jsonld-type: '@id'
+    x-jsonld-id: http://www.w3.org/ns/odrl/2/includedIn
+  implies:
+    x-jsonld-type: '@id'
+    x-jsonld-id: http://www.w3.org/ns/odrl/2/implies
+  Permission: http://www.w3.org/ns/odrl/2/Permission
+  Prohibition: http://www.w3.org/ns/odrl/2/Prohibition
+  use: http://www.w3.org/ns/odrl/2/use
+  grantUse: http://www.w3.org/ns/odrl/2/grantUse
+  aggregate: http://www.w3.org/ns/odrl/2/aggregate
+  annotate: http://www.w3.org/ns/odrl/2/annotate
+  anonymize: http://www.w3.org/ns/odrl/2/anonymize
+  archive: http://www.w3.org/ns/odrl/2/archive
+  concurrentUse: http://www.w3.org/ns/odrl/2/concurrentUse
+  derive: http://www.w3.org/ns/odrl/2/derive
+  digitize: http://www.w3.org/ns/odrl/2/digitize
+  display: http://www.w3.org/ns/odrl/2/display
+  distribute: http://www.w3.org/ns/odrl/2/distribute
+  execute: http://www.w3.org/ns/odrl/2/execute
+  extract: http://www.w3.org/ns/odrl/2/extract
+  give: http://www.w3.org/ns/odrl/2/give
+  index: http://www.w3.org/ns/odrl/2/index
+  install: http://www.w3.org/ns/odrl/2/install
+  modify: http://www.w3.org/ns/odrl/2/modify
+  move: http://www.w3.org/ns/odrl/2/move
+  play: http://www.w3.org/ns/odrl/2/play
+  present: http://www.w3.org/ns/odrl/2/present
+  print: http://www.w3.org/ns/odrl/2/print
+  read: http://www.w3.org/ns/odrl/2/read
+  reproduce: http://www.w3.org/ns/odrl/2/reproduce
+  sell: http://www.w3.org/ns/odrl/2/sell
+  stream: http://www.w3.org/ns/odrl/2/stream
+  textToSpeech: http://www.w3.org/ns/odrl/2/textToSpeech
+  transfer: http://www.w3.org/ns/odrl/2/transfer
+  transform: http://www.w3.org/ns/odrl/2/transform
+  translate: http://www.w3.org/ns/odrl/2/translate
+  Duty: http://www.w3.org/ns/odrl/2/Duty
+  duty:
+    x-jsonld-type: '@id'
+    x-jsonld-id: http://www.w3.org/ns/odrl/2/duty
+  consequence:
+    x-jsonld-type: '@id'
+    x-jsonld-id: http://www.w3.org/ns/odrl/2/consequence
+  remedy:
+    x-jsonld-type: '@id'
+    x-jsonld-id: http://www.w3.org/ns/odrl/2/remedy
+  acceptTracking: http://www.w3.org/ns/odrl/2/acceptTracking
+  attribute: http://www.w3.org/ns/odrl/2/attribute
+  compensate: http://www.w3.org/ns/odrl/2/compensate
+  delete: http://www.w3.org/ns/odrl/2/delete
+  ensureExclusivity: http://www.w3.org/ns/odrl/2/ensureExclusivity
+  include: http://www.w3.org/ns/odrl/2/include
+  inform: http://www.w3.org/ns/odrl/2/inform
+  nextPolicy: http://www.w3.org/ns/odrl/2/nextPolicy
+  obtainConsent: http://www.w3.org/ns/odrl/2/obtainConsent
+  reviewPolicy: http://www.w3.org/ns/odrl/2/reviewPolicy
+  uninstall: http://www.w3.org/ns/odrl/2/uninstall
+  watermark: http://www.w3.org/ns/odrl/2/watermark
+  Constraint: http://www.w3.org/ns/odrl/2/Constraint
+  LogicalConstraint: http://www.w3.org/ns/odrl/2/LogicalConstraint
+  refinement:
+    x-jsonld-type: '@id'
+    x-jsonld-id: http://www.w3.org/ns/odrl/2/refinement
+  Operator: http://www.w3.org/ns/odrl/2/Operator
+  operator:
+    x-jsonld-type: '@vocab'
+    x-jsonld-id: http://www.w3.org/ns/odrl/2/operator
+  RightOperand: http://www.w3.org/ns/odrl/2/RightOperand
+  rightOperand: http://www.w3.org/ns/odrl/2/rightOperand
+  rightOperandReference:
+    x-jsonld-type: http://www.w3.org/2001/XMLSchema#anyURI
+    x-jsonld-id: http://www.w3.org/ns/odrl/2/rightOperandReference
+  LeftOperand: http://www.w3.org/ns/odrl/2/LeftOperand
+  leftOperand:
+    x-jsonld-type: '@vocab'
+    x-jsonld-id: http://www.w3.org/ns/odrl/2/leftOperand
+  unit: http://www.w3.org/ns/odrl/2/unit
+  dataType:
+    x-jsonld-type: http://www.w3.org/2001/XMLSchema#anyType
+    x-jsonld-id: http://www.w3.org/ns/odrl/2/datatype
+  status: http://www.w3.org/ns/odrl/2/status
+  absolutePosition: http://www.w3.org/ns/odrl/2/absolutePosition
+  absoluteSpatialPosition: http://www.w3.org/ns/odrl/2/absoluteSpatialPosition
+  absoluteTemporalPosition: http://www.w3.org/ns/odrl/2/absoluteTemporalPosition
+  absoluteSize: http://www.w3.org/ns/odrl/2/absoluteSize
+  count: http://www.w3.org/ns/odrl/2/count
+  dateTime: http://www.w3.org/ns/odrl/2/dateTime
+  delayPeriod: http://www.w3.org/ns/odrl/2/delayPeriod
+  deliveryChannel: http://www.w3.org/ns/odrl/2/deliveryChannel
+  elapsedTime: http://www.w3.org/ns/odrl/2/elapsedTime
+  event: http://www.w3.org/ns/odrl/2/event
+  fileFormat: http://www.w3.org/ns/odrl/2/fileFormat
+  language: http://www.w3.org/ns/odrl/2/language
+  media: http://www.w3.org/ns/odrl/2/media
+  meteredTime: http://www.w3.org/ns/odrl/2/meteredTime
+  payAmount: http://www.w3.org/ns/odrl/2/payAmount
+  percentage: http://www.w3.org/ns/odrl/2/percentage
+  product: http://www.w3.org/ns/odrl/2/product
+  purpose: http://www.w3.org/ns/odrl/2/purpose
+  recipient: http://www.w3.org/ns/odrl/2/recipient
+  relativePosition: http://www.w3.org/ns/odrl/2/relativePosition
+  relativeSpatialPosition: http://www.w3.org/ns/odrl/2/relativeSpatialPosition
+  relativeTemporalPosition: http://www.w3.org/ns/odrl/2/relativeTemporalPosition
+  relativeSize: http://www.w3.org/ns/odrl/2/relativeSize
+  resolution: http://www.w3.org/ns/odrl/2/resolution
+  spatial: http://www.w3.org/ns/odrl/2/spatial
+  spatialCoordinates: http://www.w3.org/ns/odrl/2/spatialCoordinates
+  systemDevice: http://www.w3.org/ns/odrl/2/systemDevice
+  timeInterval: http://www.w3.org/ns/odrl/2/timeInterval
+  unitOfCount: http://www.w3.org/ns/odrl/2/unitOfCount
+  version: http://www.w3.org/ns/odrl/2/version
+  virtualLocation: http://www.w3.org/ns/odrl/2/virtualLocation
+  eq: http://www.w3.org/ns/odrl/2/eq
+  gt: http://www.w3.org/ns/odrl/2/gt
+  gteq: http://www.w3.org/ns/odrl/2/gteq
+  lt: http://www.w3.org/ns/odrl/2/lt
+  lteq: http://www.w3.org/ns/odrl/2/lteq
+  neq: http://www.w3.org/ns/odrl/2/neg
+  isA: http://www.w3.org/ns/odrl/2/isA
+  hasPart: http://www.w3.org/ns/odrl/2/hasPart
+  isPartOf: http://www.w3.org/ns/odrl/2/isPartOf
+  isAllOf: http://www.w3.org/ns/odrl/2/isAllOf
+  isAnyOf: http://www.w3.org/ns/odrl/2/isAnyOf
+  isNoneOf: http://www.w3.org/ns/odrl/2/isNoneOf
+  or: http://www.w3.org/ns/odrl/2/or
+  xone: http://www.w3.org/ns/odrl/2/xone
+  and: http://www.w3.org/ns/odrl/2/and
+  andSequence: http://www.w3.org/ns/odrl/2/andSequence
+  policyUsage: http://www.w3.org/ns/odrl/2/policyUsage
+  Attribution: http://creativecommons.org/ns#Attribution
+  CommercialUse: http://creativecommons.org/ns#CommercialUse
+  DerivativeWorks: http://creativecommons.org/ns#DerivativeWorks
+  Distribution: http://creativecommons.org/ns#Distribution
+  Notice: http://creativecommons.org/ns#Notice
+  Reproduction: http://creativecommons.org/ns#Reproduction
+  ShareAlike: http://creativecommons.org/ns#ShareAlike
+  Sharing: http://creativecommons.org/ns#Sharing
+  SourceCode: http://creativecommons.org/ns#SourceCode
+  dct:source:
+    x-jsonld-type: '@id'
+  seeAlso:
+    x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#seeAlso
+    x-jsonld-type: '@id'
+  value:
+    x-jsonld-id: http://www.w3.org/1999/02/22-rdf-syntax-ns#value
+    x-jsonld-type: '@id'
+x-jsonld-prefixes:
+  odrl: http://www.w3.org/ns/odrl/2/
+  xsd: http://www.w3.org/2001/XMLSchema#
+  cc: http://creativecommons.org/ns#
+  dct: http://purl.org/dc/terms/
+  rdfs: http://www.w3.org/2000/01/rdf-schema#
+  foaf: http://xmlns.com/foaf/0.1/
+  rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
+  owl: http://www.w3.org/2002/07/owl#
+  skos: http://www.w3.org/2004/02/skos/core#
+  vcard: http://www.w3.org/2006/vcard/ns#
+  schema: http://schema.org/
+  ldr: http://purl.org/NET/ldr/ns#
+  industry: 'http://www.w3.org/ns/odrl/2/industry:'

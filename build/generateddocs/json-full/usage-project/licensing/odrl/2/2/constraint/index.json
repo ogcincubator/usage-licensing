@@ -1,0 +1,41 @@
+
+
+{
+  "itemIdentifier": "eu.usage-project.licensing.odrl.2.2.constraint",
+  "name": "ODRL 2.2 Constraint",
+  "abstract": "A Constraint according to the Open Digital Rights Language (ODRL) version 2.2. This building block is currently a stub.",
+  "status": "under-development",
+  "dateTimeAddition": "2025-01-06T13:00:00Z",
+  "itemClass": "schema",
+  "register": "ogc-building-block-register",
+  "version": "0.1",
+  "dateOfLastChange": "2025-01-13",
+  "sources": [
+    {
+      "title": "ODRL Information Model 2.2",
+      "link": "https://www.w3.org/TR/odrl-model/"
+    },
+    {
+      "title": "ODRL Vocabulary & Expression 2.2",
+      "link": "https://www.w3.org/TR/odrl-vocab/"
+    }
+  ],
+  "tags": [
+    "licensing",
+    "odrl"
+  ],
+  "shaclRules": {},
+  "schema": {
+    "application/yaml": "https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/odrl/2/2/constraint/schema.yaml",
+    "application/json": "https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/odrl/2/2/constraint/schema.json"
+  },
+  "sourceSchema": "https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/_sources/odrl/2.2/constraint/schema.yaml",
+  "sourceFiles": "https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/_sources/odrl/2.2/constraint/",
+  "rdfData": [
+    "https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/data.ttl"
+  ],
+  "validationPassed": true,
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\n$comment: Stub\n",
+  "gitRepository": "https://github.com/ogcincubator/usage-licensing",
+  "gitPath": "_sources/odrl/2.2/constraint"
+}

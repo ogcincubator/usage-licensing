@@ -7,85 +7,160 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://raw.githubusercontent.com/ogcincubator/usage-licensing/ogc.bbr.template.myFeature> a skos:Concept,
+<https://raw.githubusercontent.com/ogcincubator/usage-licensing/eu.usage-project.licensing.odrl.2.2.action> a skos:Concept,
         dcat:Dataset,
         bblocks:Schema ;
-    rdfs:label "Custom Feature" ;
-    dct:abstract "This examples shows a simple customisation for OGC API Feature schemas" ;
-    dct:created "2023-05-19T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/bblock/ogc.bbr.template.myFeature" ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/generateddocs/json-full/bbr/template/myFeature/index.json" ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/generateddocs/markdown/bbr/template/myFeature/index.md" ] ;
-    dct:hasVersion "1.0" ;
-    dct:modified "2025-01-09"^^xsd:date ;
-    dct:source <https://docs.ogc.org/is/17-069r3/17-069r3.html#_response_7> ;
-    skos:inScheme <https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/> ;
-    dcat:keyword "examples",
-        "feature" ;
-    bblocks:dependsOn <https://raw.githubusercontent.com/ogcincubator/usage-licensing/ogc.bbr.template.mySchema>,
-        <https://raw.githubusercontent.com/ogcincubator/usage-licensing/ogc.geo.features.feature> ;
-    bblocks:hasJsonLdContext <https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/bbr/template/myFeature/context.jsonld> ;
-    bblocks:hasSchema <https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/bbr/template/myFeature/schema.json>,
-        <https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/bbr/template/myFeature/schema.yaml> ;
-    bblocks:hasShaclRule <https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/_sources/mySchema/rules.shacl> ;
-    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
-    bblocks:status <http://www.opengis.net/def/status/under-development> .
-
-<https://docs.ogc.org/is/17-069r3/17-069r3.html#_response_7> rdfs:label "OGC API - Features, Part 1, 7.16.2: Feature Response" .
-
-<https://example.com/sources/1> rdfs:label "Sample source document" .
-
-<https://raw.githubusercontent.com/ogcincubator/usage-licensing/ogc.bbr.template.mySchema> a skos:Concept,
-        dcat:Dataset,
-        bblocks:Schema ;
-    rdfs:label "My Schema" ;
-    dct:abstract "An example schema defining the set of properties of any type of object." ;
-    dct:created "2023-04-05T00:00:00+00:00"^^xsd:dateTime ;
+    rdfs:label "ODRL 2.2 Action" ;
+    dct:abstract "An Action according to the Open Digital Rights Language (ODRL) version 2.2." ;
+    dct:created "2025-01-06T13:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/generateddocs/json-full/bbr/template/mySchema/index.json" ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/bblock/ogc.bbr.template.mySchema" ],
+            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/generateddocs/json-full/usage-project/licensing/odrl/2/2/action/index.json" ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/generateddocs/markdown/bbr/template/mySchema/index.md" ] ;
+            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/generateddocs/markdown/usage-project/licensing/odrl/2/2/action/index.md" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/bblock/eu.usage-project.licensing.odrl.2.2.action" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2025-01-09"^^xsd:date ;
-    dct:source <https://example.com/sources/1> ;
+    dct:modified "2025-01-13"^^xsd:date ;
+    dct:source <https://www.w3.org/TR/odrl-model/>,
+        <https://www.w3.org/TR/odrl-vocab/> ;
     skos:inScheme <https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/> ;
-    dcat:keyword "templates" ;
-    bblocks:hasJsonLdContext <https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/bbr/template/mySchema/context.jsonld> ;
-    bblocks:hasSchema <https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/bbr/template/mySchema/schema.json>,
-        <https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/bbr/template/mySchema/schema.yaml> ;
-    bblocks:hasShaclRule <https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/_sources/mySchema/rules.shacl> ;
-    bblocks:hasSourceJsonLdContext <https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/_sources/mySchema/context.jsonld> ;
-    bblocks:scope <http://www.opengis.net/def/bblocks/scope/unstable> ;
+    dcat:keyword "licensing",
+        "odrl" ;
+    bblocks:dependsOn <https://raw.githubusercontent.com/ogcincubator/usage-licensing/eu.usage-project.licensing.odrl.2.2.constraint> ;
+    bblocks:hasJsonLdContext <https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/odrl/2/2/action/context.jsonld> ;
+    bblocks:hasSchema <https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/odrl/2/2/action/schema.json>,
+        <https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/odrl/2/2/action/schema.yaml> ;
+    bblocks:hasSourceJsonLdContext <https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/_sources/odrl/2.2/action/context.jsonld> ;
     bblocks:status <http://www.opengis.net/def/status/under-development> .
+
+<https://raw.githubusercontent.com/ogcincubator/usage-licensing/eu.usage-project.licensing.odrl.2.2.policy> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "ODRL 2.2 Policy" ;
+    dct:abstract "A Policy according to the Open Digital Rights Language (ODRL) version 2.2" ;
+    dct:created "2025-01-06T13:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/generateddocs/json-full/usage-project/licensing/odrl/2/2/policy/index.json" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/bblock/eu.usage-project.licensing.odrl.2.2.policy" ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/generateddocs/markdown/usage-project/licensing/odrl/2/2/policy/index.md" ] ;
+    dct:hasVersion "0.1" ;
+    dct:modified "2025-01-13"^^xsd:date ;
+    dct:source <https://www.w3.org/TR/odrl-model/>,
+        <https://www.w3.org/TR/odrl-vocab/> ;
+    skos:inScheme <https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/> ;
+    dcat:keyword "licensing",
+        "odrl" ;
+    bblocks:dependsOn <https://raw.githubusercontent.com/ogcincubator/usage-licensing/eu.usage-project.licensing.odrl.2.2.constraint>,
+        <https://raw.githubusercontent.com/ogcincubator/usage-licensing/eu.usage-project.licensing.odrl.2.2.rule> ;
+    bblocks:hasJsonLdContext <https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/odrl/2/2/policy/context.jsonld> ;
+    bblocks:hasSchema <https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/odrl/2/2/policy/schema.json>,
+        <https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/odrl/2/2/policy/schema.yaml> ;
+    bblocks:hasSourceJsonLdContext <https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/_sources/odrl/2.2/policy/context.jsonld> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> .
+
+<https://raw.githubusercontent.com/ogcincubator/usage-licensing/eu.usage-project.licensing.prov> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "USAGE Provenance Schema" ;
+    dct:abstract "Schema for a provenance chain based on PROV, with additional USAGE terms" ;
+    dct:created "2025-01-06T13:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/bblock/eu.usage-project.licensing.prov" ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/generateddocs/markdown/usage-project/licensing/prov/index.md" ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/generateddocs/json-full/usage-project/licensing/prov/index.json" ] ;
+    dct:hasVersion "0.1" ;
+    dct:modified "2025-01-13"^^xsd:date ;
+    dct:source <https://ogcincubator.github.io/bblock-prov-schema/bblock/ogc.ogc-utils.prov/>,
+        <https://www.w3.org/TR/prov-o/> ;
+    skos:inScheme <https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/> ;
+    dcat:keyword "prov-o",
+        "provenance",
+        "usage" ;
+    bblocks:dependsOn <https://raw.githubusercontent.com/ogcincubator/usage-licensing/ogc.ogc-utils.prov> ;
+    bblocks:hasJsonLdContext <https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/prov/context.jsonld> ;
+    bblocks:hasSchema <https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/prov/schema.json>,
+        <https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/prov/schema.yaml> ;
+    bblocks:hasSourceJsonLdContext <https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/_sources/prov/context.jsonld> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> .
+
+<https://ogcincubator.github.io/bblock-prov-schema/bblock/ogc.ogc-utils.prov/> rdfs:label "Provenance Chain building block" .
+
+<https://raw.githubusercontent.com/ogcincubator/usage-licensing/eu.usage-project.licensing.odrl.2.2.rule> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "ODRL 2.2 Rule" ;
+    dct:abstract "A Rule according to the Open Digital Rights Language (ODRL) version 2.2" ;
+    dct:created "2025-01-06T13:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/bblock/eu.usage-project.licensing.odrl.2.2.rule" ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/generateddocs/json-full/usage-project/licensing/odrl/2/2/rule/index.json" ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/generateddocs/markdown/usage-project/licensing/odrl/2/2/rule/index.md" ] ;
+    dct:hasVersion "0.1" ;
+    dct:modified "2025-01-13"^^xsd:date ;
+    dct:source <https://www.w3.org/TR/odrl-model/>,
+        <https://www.w3.org/TR/odrl-vocab/> ;
+    skos:inScheme <https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/> ;
+    dcat:keyword "licensing",
+        "odrl" ;
+    bblocks:hasJsonLdContext <https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/odrl/2/2/rule/context.jsonld> ;
+    bblocks:hasSchema <https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/odrl/2/2/rule/schema.json>,
+        <https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/odrl/2/2/rule/schema.yaml> ;
+    bblocks:hasSourceJsonLdContext <https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/_sources/odrl/2.2/rule/context.jsonld> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> .
+
+<https://www.w3.org/TR/prov-o/> rdfs:label "PROV-O: The PROV Ontology" .
+
+<https://raw.githubusercontent.com/ogcincubator/usage-licensing/eu.usage-project.licensing.odrl.2.2.constraint> a skos:Concept,
+        dcat:Dataset,
+        bblocks:Schema ;
+    rdfs:label "ODRL 2.2 Constraint" ;
+    dct:abstract "A Constraint according to the Open Digital Rights Language (ODRL) version 2.2. This building block is currently a stub." ;
+    dct:created "2025-01-06T13:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/generateddocs/json-full/usage-project/licensing/odrl/2/2/constraint/index.json" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/bblock/eu.usage-project.licensing.odrl.2.2.constraint" ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/generateddocs/markdown/usage-project/licensing/odrl/2/2/constraint/index.md" ] ;
+    dct:hasVersion "0.1" ;
+    dct:modified "2025-01-13"^^xsd:date ;
+    dct:source <https://www.w3.org/TR/odrl-model/>,
+        <https://www.w3.org/TR/odrl-vocab/> ;
+    skos:inScheme <https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/> ;
+    dcat:keyword "licensing",
+        "odrl" ;
+    bblocks:hasSchema <https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/odrl/2/2/constraint/schema.json>,
+        <https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/annotated/usage-project/licensing/odrl/2/2/constraint/schema.yaml> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> .
+
+<https://www.w3.org/TR/odrl-model/> rdfs:label "ODRL Information Model 2.2" .
+
+<https://www.w3.org/TR/odrl-vocab/> rdfs:label "ODRL Vocabulary & Expression 2.2" .
 
 <https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/> a skos:ConceptScheme,
         dcat:Catalog ;
-    rdfs:label "Building Blocks - My OGC Building Blocks repository" ;
-    dct:abstract """This is an example text for the abstract. It should be short and to the point.
-A "Tell me more" link will appear if there is an additional description with a longer explanation.
-""" ;
-    dct:description """The description can be longer. Both **the abstract** *and the description* support Markdown,
-including [links](https://google.es).
-""" ;
-    skos:prefLabel "Building Blocks - My OGC Building Blocks repository" ;
+    rdfs:label "Building Blocks - USAGE project licensing" ;
+    skos:prefLabel "Building Blocks - USAGE project licensing" ;
     bblocks:hasValidationReport <https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/tests/report.html> ;
-    bblocks:imports <https://opengeospatial.github.io/bblocks/register.json> .
+    bblocks:imports <https://ogcincubator.github.io/bblock-prov-schema/build/register.json>,
+        <https://opengeospatial.github.io/bblocks/register.json> .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2025-01-09T08:33:51.732400"^^xsd:dateTime ;
-    prov:startedAtTime "2025-01-09T08:33:51.664522"^^xsd:dateTime ;
+    prov:endedAtTime "2025-01-13T09:27:59.606408"^^xsd:dateTime ;
+    prov:startedAtTime "2025-01-13T09:27:59.533819"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
-            dct:format "application/json" ;
-            dct:hasVersion "git:8cf5a233c11c803a8b5d3858e1226c86b9922ed4" ;
-            rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/register.json> ],
-        [ a prov:Entity ;
             dct:format "application/yaml" ;
-            rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ] ;
+            rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ],
+        [ a prov:Entity ;
+            dct:format "application/json" ;
+            dct:hasVersion "git:2d8bb3edd10eaf5f576eced0596efe88af1fe98e" ;
+            rdfs:seeAlso <https://raw.githubusercontent.com/ogcincubator/usage-licensing/undefined/build/register.json> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;
             rdfs:label "OGC-NA tools" ;
