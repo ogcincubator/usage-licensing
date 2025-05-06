@@ -1,0 +1,28 @@
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix ldr: <http://purl.org/NET/ldr/ns#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix usage-action: <https://w3id.org/usage-project/odrl/actions/> .
+@prefix usage-license: <https://w3id.org/usage-project/licenses/> .
+
+usage-license:es-zaragoza-public-license a odrl:Policy ;
+    dct:source <https://www.zaragoza.es/sede/portal/aviso-legal#condiciones> ;
+    odrl:duty [ odrl:action cc:Attribution,
+                usage-action:preserveOriginalMeaning,
+                usage-action:preserveTimestamp ] ;
+    odrl:permission [ odrl:action cc:CommercialUse,
+                cc:DerivativeWorks,
+                cc:Distribution,
+                cc:Reproduction,
+                cc:ShareAlike,
+                ldr:extraction,
+                ldr:reproduction,
+                ldr:reutilization,
+                odrl:extract ] ;
+    odrl:prohibition [ odrl:action usage-action:claimResponsibility ] .
+
+usage-license:it-dato-pubblico a odrl:Policy ;
+    dct:source <https://docs.italia.it/italia/piano-triennale-ict/codice-amministrazione-digitale-docs/it/v2018-09-28/_rst/capo6_art68.html> ;
+    owl:sameAs <http://purl.org/NET/rdflicense/publicdomain> .
+

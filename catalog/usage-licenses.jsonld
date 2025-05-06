@@ -1,0 +1,51 @@
+{
+  "@context": [
+    "https://ogcincubator.github.io/usage-licensing/build/annotated/usage-project/licensing/odrl/2/2/policy/context.jsonld",
+    {
+      "usage-license": "https://w3id.org/usage-project/licenses/",
+      "usage-action": "https://w3id.org/usage-project/odrl/actions/"
+    }
+  ],
+  "@graph": [
+    {
+      "uid": "usage-license:it-dato-pubblico",
+      "type": "Policy",
+      "title": "Dato pubblico (cfr. art. 1 Codice Amministrazione Digitale Italia)",
+      "dct:source": "https://docs.italia.it/italia/piano-triennale-ict/codice-amministrazione-digitale-docs/it/v2018-09-28/_rst/capo6_art68.html",
+      "owl:sameAs": {
+        "@id": "http://purl.org/NET/rdflicense/publicdomain"
+      }
+    },
+    {
+      "uid": "usage-license:es-zaragoza-public-license",
+      "type": "Policy",
+      "title": "Licencia de documentos reutilizables del Ayuntamiento de Zaragoza",
+      "dct:source": "https://www.zaragoza.es/sede/portal/aviso-legal#condiciones",
+      "permission": {
+        "action": [
+          "cc:CommercialUse",
+          "cc:Distribution",
+          "cc:Reproduction",
+          "cc:DerivativeWorks",
+          "ldr:reproduction",
+          "ldr:reutilization",
+          "extract",
+          "ldr:extraction",
+          "cc:ShareAlike"
+        ]
+      },
+      "prohibition": {
+        "action": [
+          "usage-action:claimResponsibility"
+        ]
+      },
+      "duty": {
+        "action": [
+          "cc:Attribution",
+          "usage-action:preserveTimestamp",
+          "usage-action:preserveOriginalMeaning"
+        ]
+      }
+    }
+  ]
+}
