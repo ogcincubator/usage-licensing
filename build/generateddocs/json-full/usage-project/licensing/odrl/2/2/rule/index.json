@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-register",
   "version": "0.1",
-  "dateOfLastChange": "2025-01-13",
+  "dateOfLastChange": "2025-05-06",
   "sources": [
     {
       "title": "ODRL Information Model 2.2",
@@ -33,9 +33,7 @@
   "sourceSchema": "https://ogcincubator.github.io/usage-licensing/_sources/odrl/2.2/rule/schema.yaml",
   "sourceLdContext": "https://ogcincubator.github.io/usage-licensing/_sources/odrl/2.2/rule/context.jsonld",
   "sourceFiles": "https://ogcincubator.github.io/usage-licensing/_sources/odrl/2.2/rule/",
-  "rdfData": [
-    "https://ogcincubator.github.io/usage-licensing/data.ttl"
-  ],
+  "rdfData": [],
   "validationPassed": true,
   "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\n$defs:\n  rule:\n    type: object\n    required:\n    - action\n    action:\n      $ref: '#/$defs/action'\n    duty:\n      $ref: '#/$defs/rule'\n    remedy:\n      $ref: '#/$defs/rule'\n    target:\n      oneOf:\n      - type: string\n      - type: object\n  action:\n    oneOf:\n    - type: string\n    - type: array\n      minItems: 1\n      items:\n        type: string\n$ref: '#/$defs/rule'\nx-jsonld-extra-terms:\n  Action: odrl:Action\n  action:\n    x-jsonld-type: '@vocab'\n    x-jsonld-id: odrl:action\n  Duty: odrl:Duty\n  duty:\n    x-jsonld-type: '@id'\n    x-jsonld-id: odrl:duty\n  consequence:\n    x-jsonld-type: '@id'\n    x-jsonld-id: odrl:consequence\n  remedy:\n    x-jsonld-type: '@id'\n    x-jsonld-id: odrl:remedy\n  target:\n    x-jsonld-type: '@id'\n    x-jsonld-id: odrl:target\n",
   "gitRepository": "https://github.com/ogcincubator/usage-licensing",

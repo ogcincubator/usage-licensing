@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-register",
   "version": "0.1",
-  "dateOfLastChange": "2025-01-13",
+  "dateOfLastChange": "2025-05-06",
   "sources": [
     {
       "title": "ODRL Information Model 2.2",
@@ -36,9 +36,7 @@
   "sourceSchema": "https://ogcincubator.github.io/usage-licensing/_sources/odrl/2.2/action/schema.yaml",
   "sourceLdContext": "https://ogcincubator.github.io/usage-licensing/_sources/odrl/2.2/action/context.jsonld",
   "sourceFiles": "https://ogcincubator.github.io/usage-licensing/_sources/odrl/2.2/action/",
-  "rdfData": [
-    "https://ogcincubator.github.io/usage-licensing/data.ttl"
-  ],
+  "rdfData": [],
   "validationPassed": true,
   "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\n$defs:\n  actionObject:\n    type: object\n    properties:\n      uid:\n        type: string\n        x-jsonld-id: rdf:value\n        x-jsonld-type: '@id'\n      refinement:\n        oneOf:\n        - $ref: https://ogcincubator.github.io/usage-licensing/build/annotated/usage-project/licensing/odrl/2/2/constraint/schema.yaml\n        - type: array\n          items:\n            $ref: https://ogcincubator.github.io/usage-licensing/build/annotated/usage-project/licensing/odrl/2/2/constraint/schema.yaml\noneOf:\n- type: string\n- type: array\n  items:\n    type: string\n- $ref: '#/$defs/actionObject'\n- type: array\n  items:\n    $ref: '#/$defs/actionObject'\n",
   "gitRepository": "https://github.com/ogcincubator/usage-licensing",

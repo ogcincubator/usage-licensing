@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-register",
   "version": "0.1",
-  "dateOfLastChange": "2025-01-13",
+  "dateOfLastChange": "2025-05-06",
   "sources": [
     {
       "title": "Provenance Chain building block",
@@ -37,9 +37,7 @@
   "sourceSchema": "https://ogcincubator.github.io/usage-licensing/_sources/prov/schema.yaml",
   "sourceLdContext": "https://ogcincubator.github.io/usage-licensing/_sources/prov/context.jsonld",
   "sourceFiles": "https://ogcincubator.github.io/usage-licensing/_sources/prov/",
-  "rdfData": [
-    "https://ogcincubator.github.io/usage-licensing/data.ttl"
-  ],
+  "rdfData": [],
   "validationPassed": true,
   "testOutputs": "https://github.com/ogcincubator/usage-licensing/blob/master/build/tests/usage-project/licensing/prov/",
   "examples": [

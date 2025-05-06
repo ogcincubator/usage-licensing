@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-register",
   "version": "0.1",
-  "dateOfLastChange": "2025-01-13",
+  "dateOfLastChange": "2025-05-06",
   "sources": [
     {
       "title": "ODRL Information Model 2.2",
@@ -31,9 +31,7 @@
   },
   "sourceSchema": "https://ogcincubator.github.io/usage-licensing/_sources/odrl/2.2/constraint/schema.yaml",
   "sourceFiles": "https://ogcincubator.github.io/usage-licensing/_sources/odrl/2.2/constraint/",
-  "rdfData": [
-    "https://ogcincubator.github.io/usage-licensing/data.ttl"
-  ],
+  "rdfData": [],
   "validationPassed": true,
   "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\n$comment: Stub\n",
   "gitRepository": "https://github.com/ogcincubator/usage-licensing",
