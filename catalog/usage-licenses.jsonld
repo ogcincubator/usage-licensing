@@ -46,6 +46,23 @@
           "usage-action:preserveOriginalMeaning"
         ]
       }
+    },
+    {
+      "uid": "usage-license:statbel.fgov.be-open-data",
+      "type": "Policy",
+      "title": null,
+      "dct:source": "https://statbel.fgov.be/en/open-data",
+      "owl:sameAs": {
+        "@id": "http://purl.org/NET/rdflicense/cc-by4.0"
+      }
+    },
+    {
+      "uid": "usage-license:usgs.public-data",
+      "type": "Policy",
+      "title": "USGS public data",
+      "owl:sameAs": {
+        "@id": "http://purl.org/NET/rdflicense/publicdomain"
+      }
     }
   ]
 }

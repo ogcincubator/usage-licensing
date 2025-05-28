@@ -1,5 +1,18 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 
+<https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LC08_C02_T1_L2#description> dcterms:license <https://w3id.org/usage-project/licenses/usgs.public-data> ;
+    dcterms:title "None" .
+
+<https://developers.google.com/earth-engine/datasets/catalog/LANDSAT_LC08_C02_T1_TOA#description> dcterms:license <https://w3id.org/usage-project/licenses/usgs.public-data> ;
+    dcterms:title "None" .
+
+<https://developers.google.com/earth-engine/datasets/catalog/NCEP_RE_surface_wv?hl=it> dcterms:license <http://purl.org/NET/rdflicense/publicdomain> ;
+    dcterms:title "None" .
+
+<https://geonetwork.sdi.sadl.kuleuven.be/geonetwork/srv/api/records/0202b8dd-1c7e-4331-8ba7-35e1fef4037a> dcterms:identifier "0202b8dd-1c7e-4331-8ba7-35e1fef4037a" ;
+    dcterms:license <https://w3id.org/usage-project/licenses/statbel.fgov.be-open-data> ;
+    dcterms:title "None" .
+
 <https://usage.geocat.live/catalogue/srv/api/records/0a415354-4f2f-4799-bcdf-ca8c07c1386b> dcterms:identifier "0a415354-4f2f-4799-bcdf-ca8c07c1386b" ;
     dcterms:license <https://w3id.org/usage-project/licenses/es-zaragoza-public-license> ;
     dcterms:title "Input data Emissions Zaragoza - Industry 2019" .
