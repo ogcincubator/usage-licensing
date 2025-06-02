@@ -66,7 +66,7 @@ def _main():
         license = {
             'uid': 'usage-license:' + license_entry['id'],
             'type': 'Policy',
-            'title': license_entry['label'],
+            'label': license_entry['label'],
         }
         if license_entry['url']:
             license['dct:source'] = license_entry['url']
@@ -89,6 +89,16 @@ def _main():
                     rules.setdefault('duties', []).extend(duties)
 
         output_licenses.append(license)
+
+    print('Processing ODRL actions...')
+    lookups_ws = licenses_ws = wb['Lookups']
+    for i, row in enumerate(lookups_ws.rows):
+        if len(row) >= 4 and row[2].value.startswith('usage-action:'):
+            output_licenses.append({
+                'type': 'odrl:Action',
+                'uid': row[2].value,
+                'label': row[3].value,
+            })
 
     licenses_jsonld = {
         '@context': [
