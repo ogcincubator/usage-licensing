@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-register",
   "version": "0.1",
-  "dateOfLastChange": "2025-05-06",
+  "dateOfLastChange": "2025-06-02",
   "sources": [
     {
       "title": "ODRL Information Model 2.2",
