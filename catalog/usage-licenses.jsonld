@@ -10,7 +10,7 @@
     {
       "uid": "usage-license:it-dato-pubblico",
       "type": "Policy",
-      "title": "Dato pubblico (cfr. art. 1 Codice Amministrazione Digitale Italia)",
+      "label": "Dato pubblico (cfr. art. 1 Codice Amministrazione Digitale Italia)",
       "dct:source": "https://docs.italia.it/italia/piano-triennale-ict/codice-amministrazione-digitale-docs/it/v2018-09-28/_rst/capo6_art68.html",
       "owl:sameAs": {
         "@id": "http://purl.org/NET/rdflicense/publicdomain"
@@ -19,7 +19,7 @@
     {
       "uid": "usage-license:es-zaragoza-public-license",
       "type": "Policy",
-      "title": "Licencia de documentos reutilizables del Ayuntamiento de Zaragoza",
+      "label": "Licencia de documentos reutilizables del Ayuntamiento de Zaragoza",
       "dct:source": "https://www.zaragoza.es/sede/portal/aviso-legal#condiciones",
       "permission": {
         "action": [
@@ -50,7 +50,7 @@
     {
       "uid": "usage-license:statbel.fgov.be-open-data",
       "type": "Policy",
-      "title": null,
+      "label": null,
       "dct:source": "https://statbel.fgov.be/en/open-data",
       "owl:sameAs": {
         "@id": "http://purl.org/NET/rdflicense/cc-by4.0"
@@ -59,10 +59,25 @@
     {
       "uid": "usage-license:usgs.public-data",
       "type": "Policy",
-      "title": "USGS public data",
+      "label": "USGS public data",
       "owl:sameAs": {
         "@id": "http://purl.org/NET/rdflicense/publicdomain"
       }
+    },
+    {
+      "type": "odrl:Action",
+      "uid": "usage-action:preserveTimestamp",
+      "label": "Preserve and communicate latest modification update of the data"
+    },
+    {
+      "type": "odrl:Action",
+      "uid": "usage-action:preserveOriginalMeaning",
+      "label": "Maintain the original meaning of the data"
+    },
+    {
+      "type": "odrl:Action",
+      "uid": "usage-action:claimResponsibility",
+      "label": "Claim responsibility by the original party of any derived or reused data"
     }
   ]
 }

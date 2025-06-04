@@ -3,10 +3,12 @@
 @prefix ldr: <http://purl.org/NET/ldr/ns#> .
 @prefix odrl: <http://www.w3.org/ns/odrl/2/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix usage-action: <https://w3id.org/usage-project/odrl/actions/> .
 @prefix usage-license: <https://w3id.org/usage-project/licenses/> .
 
 usage-license:es-zaragoza-public-license a odrl:Policy ;
+    rdfs:label "Licencia de documentos reutilizables del Ayuntamiento de Zaragoza" ;
     dct:source <https://www.zaragoza.es/sede/portal/aviso-legal#condiciones> ;
     odrl:duty [ odrl:action cc:Attribution,
                 usage-action:preserveOriginalMeaning,
@@ -23,6 +25,7 @@ usage-license:es-zaragoza-public-license a odrl:Policy ;
     odrl:prohibition [ odrl:action usage-action:claimResponsibility ] .
 
 usage-license:it-dato-pubblico a odrl:Policy ;
+    rdfs:label "Dato pubblico (cfr. art. 1 Codice Amministrazione Digitale Italia)" ;
     dct:source <https://docs.italia.it/italia/piano-triennale-ict/codice-amministrazione-digitale-docs/it/v2018-09-28/_rst/capo6_art68.html> ;
     owl:sameAs <http://purl.org/NET/rdflicense/publicdomain> .
 
@@ -31,5 +34,15 @@ usage-license:statbel.fgov.be-open-data a odrl:Policy ;
     owl:sameAs <http://purl.org/NET/rdflicense/cc-by4.0> .
 
 usage-license:usgs.public-data a odrl:Policy ;
+    rdfs:label "USGS public data" ;
     owl:sameAs <http://purl.org/NET/rdflicense/publicdomain> .
+
+usage-action:claimResponsibility a odrl:Action ;
+    rdfs:label "Claim responsibility by the original party of any derived or reused data" .
+
+usage-action:preserveOriginalMeaning a odrl:Action ;
+    rdfs:label "Maintain the original meaning of the data" .
+
+usage-action:preserveTimestamp a odrl:Action ;
+    rdfs:label "Preserve and communicate latest modification update of the data" .
 
