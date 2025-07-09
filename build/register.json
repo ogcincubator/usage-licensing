@@ -1,11 +1,11 @@
 {
   "name": "USAGE project licensing",
-  "modified": "2025-06-02T12:55:03.838498",
+  "modified": "2025-07-09T11:47:25.304178",
   "tooling": {
     "bblocks-postprocess": {
-      "commitId": "\"68270eb1826f3347fc9e19ae5448183bf75cb9d4",
-      "shortCommitId": "\"68270e",
-      "date": "2025-05-27T07:46:02+00:00\""
+      "commitId": "\"bbf3699949a5c235200cc64fba479a08247de505",
+      "shortCommitId": "\"bbf369",
+      "date": "2025-07-09T11:45:09+00:00\""
     }
   },
   "gitRepository": "https://github.com/ogcincubator/usage-licensing",
@@ -27,7 +27,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "0.1",
-      "dateOfLastChange": "2025-06-02",
+      "dateOfLastChange": "2025-07-09",
       "sources": [
         {
           "title": "ODRL Information Model 2.2",
@@ -52,13 +52,13 @@
       "rdfData": [],
       "validationPassed": true,
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/usage-licensing/build/generateddocs/json-full/usage-project/licensing/odrl/2/2/constraint/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://ogcincubator.github.io/usage-licensing/build/generateddocs/markdown/usage-project/licensing/odrl/2/2/constraint/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/usage-licensing/build/generateddocs/json-full/usage-project/licensing/odrl/2/2/constraint/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -75,7 +75,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "0.1",
-      "dateOfLastChange": "2025-06-02",
+      "dateOfLastChange": "2025-07-09",
       "sources": [
         {
           "title": "ODRL Information Model 2.2",
@@ -102,13 +102,13 @@
       "rdfData": [],
       "validationPassed": true,
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/usage-licensing/build/generateddocs/json-full/usage-project/licensing/odrl/2/2/rule/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://ogcincubator.github.io/usage-licensing/build/generateddocs/markdown/usage-project/licensing/odrl/2/2/rule/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/usage-licensing/build/generateddocs/json-full/usage-project/licensing/odrl/2/2/rule/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -125,7 +125,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "0.1",
-      "dateOfLastChange": "2025-06-02",
+      "dateOfLastChange": "2025-07-09",
       "sources": [
         {
           "title": "ODRL Information Model 2.2",
@@ -155,13 +155,13 @@
       "rdfData": [],
       "validationPassed": true,
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/usage-licensing/build/generateddocs/json-full/usage-project/licensing/odrl/2/2/action/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://ogcincubator.github.io/usage-licensing/build/generateddocs/markdown/usage-project/licensing/odrl/2/2/action/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/usage-licensing/build/generateddocs/json-full/usage-project/licensing/odrl/2/2/action/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -178,7 +178,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "0.1",
-      "dateOfLastChange": "2025-06-02",
+      "dateOfLastChange": "2025-07-09",
       "sources": [
         {
           "title": "ODRL Information Model 2.2",
@@ -195,8 +195,8 @@
       ],
       "shaclRules": {},
       "dependsOn": [
-        "eu.usage-project.licensing.odrl.2.2.constraint",
-        "eu.usage-project.licensing.odrl.2.2.rule"
+        "eu.usage-project.licensing.odrl.2.2.rule",
+        "eu.usage-project.licensing.odrl.2.2.constraint"
       ],
       "ldContext": "https://ogcincubator.github.io/usage-licensing/build/annotated/usage-project/licensing/odrl/2/2/policy/context.jsonld",
       "schema": {
@@ -210,13 +210,13 @@
       "validationPassed": true,
       "testOutputs": "https://github.com/ogcincubator/usage-licensing/blob/master/build/tests/usage-project/licensing/odrl/2/2/policy/",
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/usage-licensing/build/generateddocs/json-full/usage-project/licensing/odrl/2/2/policy/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://ogcincubator.github.io/usage-licensing/build/generateddocs/markdown/usage-project/licensing/odrl/2/2/policy/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/usage-licensing/build/generateddocs/json-full/usage-project/licensing/odrl/2/2/policy/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -233,7 +233,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "0.1",
-      "dateOfLastChange": "2025-06-02",
+      "dateOfLastChange": "2025-07-09",
       "sources": [
         {
           "title": "Provenance Chain building block",
@@ -265,13 +265,13 @@
       "validationPassed": true,
       "testOutputs": "https://github.com/ogcincubator/usage-licensing/blob/master/build/tests/usage-project/licensing/prov/",
       "documentation": {
-        "json-full": {
-          "mediatype": "application/json",
-          "url": "https://ogcincubator.github.io/usage-licensing/build/generateddocs/json-full/usage-project/licensing/prov/index.json"
-        },
         "markdown": {
           "mediatype": "text/markdown",
           "url": "https://ogcincubator.github.io/usage-licensing/build/generateddocs/markdown/usage-project/licensing/prov/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/usage-licensing/build/generateddocs/json-full/usage-project/licensing/prov/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
@@ -279,5 +279,6 @@
         }
       }
     }
-  ]
+  ],
+  "remoteCacheDir": "https://ogcincubator.github.io/usage-licensing/build/annotated/_cache"
 }

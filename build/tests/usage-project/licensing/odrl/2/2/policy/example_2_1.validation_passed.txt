@@ -1,5 +1,5 @@
 Validation report for eu.usage-project.licensing.odrl.2.2.policy - ODRL 2.2 Policy
-Generated 2025-06-02T12:55:06.029562+00:00
+Generated 2025-07-09T11:47:27.685071+00:00
 === Files ===
 Using example_2_1.json from examples
 JSON-LD context is present - uplifting
