@@ -77,7 +77,7 @@
     {
       "type": "odrl:Action",
       "uid": "usage-action:claimResponsibility",
-      "label": "Claim responsibility by the original party of any derived or reused data"
+      "label": "Claim responsibility by the original party for any derived or reused data"
     }
   ]
 }

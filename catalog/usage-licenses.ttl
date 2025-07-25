@@ -38,7 +38,7 @@ usage-license:usgs.public-data a odrl:Policy ;
     owl:sameAs <http://purl.org/NET/rdflicense/publicdomain> .
 
 usage-action:claimResponsibility a odrl:Action ;
-    rdfs:label "Claim responsibility by the original party of any derived or reused data" .
+    rdfs:label "Claim responsibility by the original party for any derived or reused data" .
 
 usage-action:preserveOriginalMeaning a odrl:Action ;
     rdfs:label "Maintain the original meaning of the data" .
