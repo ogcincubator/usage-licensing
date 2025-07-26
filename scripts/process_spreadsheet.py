@@ -13,10 +13,33 @@ LICENSE_FIELDS = ('id', 'label', 'sameAs', 'url', 'description')
 TERM_FIELDS = ('licenseId', 'type', 'actions', 'duties')
 MAPPINGS_FIELDS = ('bpmn', 'id', 'title', 'url', 'usageLicense', 'wellKnownLicense')
 
-USAGE_LICENSES_NS = 'https://w3id.org/usage-project/licenses/'
+USAGE_LICENSES_NS = 'https://w3id.org/usage-project/odrl/licenses/'
 USAGE_ODRL_ACTIONS_NS = 'https://w3id.org/usage-project/odrl/actions/'
 
 OUTPUT_DIR = Path('catalog')
+
+LICENSE_ENTAILMENTS = [
+    '''
+    prefix skos: <http://www.w3.org/2004/02/skos/core#>
+    INSERT { ?o skos:broader ?s. ?s skos:narrower ?o }
+    WHERE { { ?s skos:narrower ?o } UNION { ?o skos:broader ?s } }
+    ''',
+    '''
+    prefix skos: <http://www.w3.org/2004/02/skos/core#>
+    INSERT { ?s a skos:Concept }
+    WHERE { ?s skos:inScheme ?cs }
+    ''',
+    '''
+    prefix skos: <http://www.w3.org/2004/02/skos/core#>
+    INSERT { ?s skos:prefLabel ?l }
+    WHERE { ?s rdfs:label ?l }
+    ''',
+    '''
+    prefix skos: <http://www.w3.org/2004/02/skos/core#>
+    INSERT { ?cs skos:hasTopConcept ?c . ?c skos:topConceptOf ?cs }
+    WHERE { { ?cs skos:hasTopConcept ?c } UNION { ?c skos:topConceptOf ?cs } }
+    ''',
+]
 
 
 def to_uri(s: str):
@@ -67,6 +90,8 @@ def _main():
             'uid': 'usage-license:' + license_entry['id'],
             'type': 'Policy',
             'label': license_entry['label'],
+            'skos:inScheme': {'@id': 'https://w3id.org/usage-project/odrl'},
+            'skos:broader': {'@id': 'https://w3id.org/usage-project/odrl/license'},
         }
         if license_entry['url']:
             license['dct:source'] = license_entry['url']
@@ -98,6 +123,8 @@ def _main():
                 'type': 'odrl:Action',
                 'uid': row[2].value,
                 'label': row[3].value,
+                'skos:inScheme': {'@id': 'https://w3id.org/usage-project/odrl'},
+                'skos:broader': {'@id': 'https://w3id.org/usage-project/odrl/action'},
             })
 
     licenses_jsonld = {
@@ -108,7 +135,30 @@ def _main():
                 'usage-action': USAGE_ODRL_ACTIONS_NS,
             }
         ],
-        '@graph': output_licenses,
+        '@graph': [
+            *output_licenses,
+            {
+                '@id': 'https://w3id.org/usage-project/odrl',
+                'skos:prefLabel': 'USAGE Project ODRL policies and actions',
+                '@type': 'skos:ConceptScheme',
+                'skos:hasTopConcept': [
+                    {'@id': 'https://w3id.org/usage-project/odrl/license'},
+                    {'@id': 'https://w3id.org/usage-project/odrl/action'},
+                ]
+            },
+            {
+                '@id': 'https://w3id.org/usage-project/odrl/license',
+                'skos:prefLabel': 'USAGE Project license',
+                '@type': 'skos:Concept',
+                'skos:inScheme': {'@id': 'https://w3id.org/usage-project/odrl'},
+            },
+            {
+                '@id': 'https://w3id.org/usage-project/odrl/action',
+                'skos:prefLabel': 'USAGE Project ODRL action',
+                '@type': 'skos:Concept',
+                'skos:inScheme': {'@id': 'https://w3id.org/usage-project/odrl'},
+            },
+        ],
     }
 
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -116,6 +166,10 @@ def _main():
     with open(OUTPUT_DIR / 'usage-licenses.jsonld', 'w') as f:
         f.write(licenses_jsonld_contents)
     g = Graph().parse(data=licenses_jsonld_contents, format='json-ld')
+
+    for entailment in LICENSE_ENTAILMENTS:
+        g.update(entailment)
+
     g.serialize(OUTPUT_DIR / 'usage-licenses.ttl', format='turtle')
     print(OUTPUT_DIR / 'usage-licenses.jsonld', 'and', OUTPUT_DIR / 'usage-licenses.ttl', 'written')
 
