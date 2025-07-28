@@ -2,7 +2,7 @@
   "@context": [
     "https://ogcincubator.github.io/usage-licensing/build/annotated/usage-project/licensing/odrl/2/2/policy/context.jsonld",
     {
-      "usage-license": "https://w3id.org/usage-project/licenses/",
+      "usage-license": "https://w3id.org/usage-project/odrl/licenses/",
       "usage-action": "https://w3id.org/usage-project/odrl/actions/"
     }
   ],
@@ -11,6 +11,12 @@
       "uid": "usage-license:it-dato-pubblico",
       "type": "Policy",
       "label": "Dato pubblico (cfr. art. 1 Codice Amministrazione Digitale Italia)",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/usage-project/odrl"
+      },
+      "skos:broader": {
+        "@id": "https://w3id.org/usage-project/odrl/license"
+      },
       "dct:source": "https://docs.italia.it/italia/piano-triennale-ict/codice-amministrazione-digitale-docs/it/v2018-09-28/_rst/capo6_art68.html",
       "owl:sameAs": {
         "@id": "http://purl.org/NET/rdflicense/publicdomain"
@@ -20,6 +26,12 @@
       "uid": "usage-license:es-zaragoza-public-license",
       "type": "Policy",
       "label": "Licencia de documentos reutilizables del Ayuntamiento de Zaragoza",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/usage-project/odrl"
+      },
+      "skos:broader": {
+        "@id": "https://w3id.org/usage-project/odrl/license"
+      },
       "dct:source": "https://www.zaragoza.es/sede/portal/aviso-legal#condiciones",
       "permission": {
         "action": [
@@ -50,7 +62,13 @@
     {
       "uid": "usage-license:statbel.fgov.be-open-data",
       "type": "Policy",
-      "label": null,
+      "label": "StatBel Open Data License",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/usage-project/odrl"
+      },
+      "skos:broader": {
+        "@id": "https://w3id.org/usage-project/odrl/license"
+      },
       "dct:source": "https://statbel.fgov.be/en/open-data",
       "owl:sameAs": {
         "@id": "http://purl.org/NET/rdflicense/cc-by4.0"
@@ -60,6 +78,12 @@
       "uid": "usage-license:usgs.public-data",
       "type": "Policy",
       "label": "USGS public data",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/usage-project/odrl"
+      },
+      "skos:broader": {
+        "@id": "https://w3id.org/usage-project/odrl/license"
+      },
       "owl:sameAs": {
         "@id": "http://purl.org/NET/rdflicense/publicdomain"
       }
@@ -67,17 +91,64 @@
     {
       "type": "odrl:Action",
       "uid": "usage-action:preserveTimestamp",
-      "label": "Preserve and communicate latest modification update of the data"
+      "label": "Preserve and communicate latest modification update of the data",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/usage-project/odrl"
+      },
+      "skos:broader": {
+        "@id": "https://w3id.org/usage-project/odrl/action"
+      }
     },
     {
       "type": "odrl:Action",
       "uid": "usage-action:preserveOriginalMeaning",
-      "label": "Maintain the original meaning of the data"
+      "label": "Maintain the original meaning of the data",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/usage-project/odrl"
+      },
+      "skos:broader": {
+        "@id": "https://w3id.org/usage-project/odrl/action"
+      }
     },
     {
       "type": "odrl:Action",
       "uid": "usage-action:claimResponsibility",
-      "label": "Claim responsibility by the original party for any derived or reused data"
+      "label": "Claim responsibility by the original party for any derived or reused data",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/usage-project/odrl"
+      },
+      "skos:broader": {
+        "@id": "https://w3id.org/usage-project/odrl/action"
+      }
+    },
+    {
+      "@id": "https://w3id.org/usage-project/odrl",
+      "skos:prefLabel": "USAGE Project ODRL policies and actions",
+      "@type": "skos:ConceptScheme",
+      "skos:hasTopConcept": [
+        {
+          "@id": "https://w3id.org/usage-project/odrl/license"
+        },
+        {
+          "@id": "https://w3id.org/usage-project/odrl/action"
+        }
+      ]
+    },
+    {
+      "@id": "https://w3id.org/usage-project/odrl/license",
+      "skos:prefLabel": "USAGE Project license",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/usage-project/odrl"
+      }
+    },
+    {
+      "@id": "https://w3id.org/usage-project/odrl/action",
+      "skos:prefLabel": "USAGE Project ODRL action",
+      "@type": "skos:Concept",
+      "skos:inScheme": {
+        "@id": "https://w3id.org/usage-project/odrl"
+      }
     }
   ]
 }
