@@ -23,9 +23,9 @@ usage-license:es-zaragoza-public-license a skos:Concept,
                 cc:Distribution,
                 cc:Reproduction,
                 cc:ShareAlike,
-                ldr:extraction,
-                ldr:reproduction,
-                ldr:reutilization,
+                ldr:Extraction,
+                ldr:Reproduction,
+                ldr:Reutilization,
                 odrl:extract ] ;
     odrl:prohibition [ odrl:action usage-action:claimResponsibility ] .
 

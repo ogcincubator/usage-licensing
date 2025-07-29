@@ -39,10 +39,10 @@
           "cc:Distribution",
           "cc:Reproduction",
           "cc:DerivativeWorks",
-          "ldr:reproduction",
-          "ldr:reutilization",
+          "ldr:Reproduction",
+          "ldr:Reutilization",
           "extract",
-          "ldr:extraction",
+          "ldr:Extraction",
           "cc:ShareAlike"
         ]
       },
