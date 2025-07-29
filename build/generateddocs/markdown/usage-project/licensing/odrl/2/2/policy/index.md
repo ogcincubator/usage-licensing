@@ -52,8 +52,8 @@ A Policy according to the Open Digital Rights Language (ODRL) version 2.2
     "action": [
       "DerivativeWorks",
       "Reproduction",
-      "ldr:reutilization",
-      "ldr:extraction",
+      "ldr:Reutilization",
+      "ldr:Extraction",
       "Distribution"
     ],
     "duty": {
@@ -110,8 +110,8 @@ A Policy according to the Open Digital Rights Language (ODRL) version 2.2
     "action": [
       "DerivativeWorks",
       "Reproduction",
-      "ldr:reutilization",
-      "ldr:extraction",
+      "ldr:Reutilization",
+      "ldr:Extraction",
       "Distribution"
     ],
     "duty": {
@@ -130,7 +130,7 @@ A Policy according to the Open Digital Rights Language (ODRL) version 2.2
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix ldr: <http://purl.org/NET/ldr/ns#> .
+@prefix ldr: <http://purl.oclc.org/NET/ldr/ns#> .
 @prefix odrl: <http://www.w3.org/ns/odrl/2/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
@@ -604,8 +604,8 @@ Creative Commons kan bli kontaktet på creativecommons.org.\r
     odrl:permission [ odrl:action cc:DerivativeWorks,
                 cc:Distribution,
                 cc:Reproduction,
-                ldr:extraction,
-                ldr:reutilization ;
+                ldr:Extraction,
+                ldr:Reutilization ;
             odrl:duty [ odrl:action cc:Attribution,
                         cc:Notice ] ] ;
     foaf:logo <http://i.creativecommons.org/l/by/4.0/88x31.png> .
@@ -648,10 +648,10 @@ Creative Commons kan bli kontaktet på creativecommons.org.\r
   "permission": {
     "action": [
       "Distribution",
-      "ldr:extraction",
+      "ldr:Extraction",
       "Reproduction",
       "DerivativeWorks",
-      "ldr:reutilization"
+      "ldr:Reutilization"
     ],
     "duty": {
       "action": [
@@ -701,10 +701,10 @@ Creative Commons kan bli kontaktet på creativecommons.org.\r
   "permission": {
     "action": [
       "Distribution",
-      "ldr:extraction",
+      "ldr:Extraction",
       "Reproduction",
       "DerivativeWorks",
-      "ldr:reutilization"
+      "ldr:Reutilization"
     ],
     "duty": {
       "action": [
@@ -725,7 +725,7 @@ Creative Commons kan bli kontaktet på creativecommons.org.\r
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix ldr: <http://purl.org/NET/ldr/ns#> .
+@prefix ldr: <http://purl.oclc.org/NET/ldr/ns#> .
 @prefix odrl: <http://www.w3.org/ns/odrl/2/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
@@ -1013,8 +1013,8 @@ Creative Commons Із Зазначенням Авторства – Некоме
     odrl:permission [ odrl:action cc:DerivativeWorks,
                 cc:Distribution,
                 cc:Reproduction,
-                ldr:extraction,
-                ldr:reutilization ;
+                ldr:Extraction,
+                ldr:Reutilization ;
             odrl:duty [ odrl:action cc:Attribution,
                         cc:Notice ] ] ;
     odrl:prohibition [ odrl:action cc:CommercialUse ] ;
@@ -1047,10 +1047,10 @@ Creative Commons Із Зазначенням Авторства – Некоме
   "seeAlso": "http://creativecommons.org/licenses/by-nc-sa/4.0/legalcode",
   "permission": {
     "action": [
-      "ldr:extraction",
+      "ldr:Extraction",
       "DerivativeWorks",
       "Reproduction",
-      "ldr:reutilization"
+      "ldr:Reutilization"
     ],
     "duty": {
       "action": [
@@ -1090,10 +1090,10 @@ Creative Commons Із Зазначенням Авторства – Некоме
   "seeAlso": "http://creativecommons.org/licenses/by-nc-sa/4.0/legalcode",
   "permission": {
     "action": [
-      "ldr:extraction",
+      "ldr:Extraction",
       "DerivativeWorks",
       "Reproduction",
-      "ldr:reutilization"
+      "ldr:Reutilization"
     ],
     "duty": {
       "action": [
@@ -1115,7 +1115,7 @@ Creative Commons Із Зазначенням Авторства – Некоме
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix ldr: <http://purl.org/NET/ldr/ns#> .
+@prefix ldr: <http://purl.oclc.org/NET/ldr/ns#> .
 @prefix odrl: <http://www.w3.org/ns/odrl/2/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
@@ -1224,8 +1224,8 @@ Additional languages available: Bahasa Indonesia, Nederlands, norsk, suomeksi, t
     rdfs:seeAlso <http://creativecommons.org/licenses/by-nc-sa/4.0/legalcode> ;
     odrl:permission [ odrl:action cc:DerivativeWorks,
                 cc:Reproduction,
-                ldr:extraction,
-                ldr:reutilization ;
+                ldr:Extraction,
+                ldr:Reutilization ;
             odrl:duty [ odrl:action cc:Attribution,
                         cc:Notice,
                         cc:ShareAlike ] ] ;
@@ -1586,7 +1586,7 @@ x-jsonld-prefixes:
   skos: http://www.w3.org/2004/02/skos/core#
   vcard: http://www.w3.org/2006/vcard/ns#
   schema: http://schema.org/
-  ldr: http://purl.org/NET/ldr/ns#
+  ldr: http://purl.oclc.org/NET/ldr/ns#
   industry: 'http://www.w3.org/ns/odrl/2/industry:'
 
 ```
@@ -2028,7 +2028,7 @@ Links to the schema:
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "vcard": "http://www.w3.org/2006/vcard/ns#",
     "schema": "http://schema.org/",
-    "ldr": "http://purl.org/NET/ldr/ns#",
+    "ldr": "http://purl.oclc.org/NET/ldr/ns#",
     "industry": "odrl:industry:",
     "@version": 1.1
   }

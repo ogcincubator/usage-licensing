@@ -39,8 +39,8 @@
     "action": [
       "DerivativeWorks",
       "Reproduction",
-      "ldr:reutilization",
-      "ldr:extraction",
+      "ldr:Reutilization",
+      "ldr:Extraction",
       "Distribution"
     ],
     "duty": {

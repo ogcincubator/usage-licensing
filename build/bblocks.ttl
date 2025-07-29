@@ -13,14 +13,14 @@
     rdfs:label "ODRL 2.2 Action" ;
     dct:abstract "An Action according to the Open Digital Rights Language (ODRL) version 2.2."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-01-06T13:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/usage-licensing/bblock/eu.usage-project.licensing.odrl.2.2.action" ],
-        [ dct:format "application/json" ;
+    dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/usage-licensing/build/generateddocs/json-full/usage-project/licensing/odrl/2/2/action/index.json" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/usage-licensing/bblock/eu.usage-project.licensing.odrl.2.2.action" ],
         [ dct:format "text/markdown" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/usage-licensing/build/generateddocs/markdown/usage-project/licensing/odrl/2/2/action/index.md" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2025-07-26"^^xsd:date ;
+    dct:modified "2025-07-29"^^xsd:date ;
     dct:source <https://www.w3.org/TR/odrl-model/>,
         <https://www.w3.org/TR/odrl-vocab/> ;
     skos:inScheme <https://ogcincubator.github.io/usage-licensing/> ;
@@ -41,12 +41,12 @@
     dct:created "2025-01-06T13:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/usage-licensing/build/generateddocs/json-full/usage-project/licensing/odrl/2/2/policy/index.json" ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/usage-licensing/build/generateddocs/markdown/usage-project/licensing/odrl/2/2/policy/index.md" ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/usage-licensing/bblock/eu.usage-project.licensing.odrl.2.2.policy" ] ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/usage-licensing/bblock/eu.usage-project.licensing.odrl.2.2.policy" ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/usage-licensing/build/generateddocs/markdown/usage-project/licensing/odrl/2/2/policy/index.md" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2025-07-26"^^xsd:date ;
+    dct:modified "2025-07-29"^^xsd:date ;
     dct:source <https://www.w3.org/TR/odrl-model/>,
         <https://www.w3.org/TR/odrl-vocab/> ;
     skos:inScheme <https://ogcincubator.github.io/usage-licensing/> ;
@@ -66,14 +66,14 @@
     rdfs:label "USAGE Provenance Schema" ;
     dct:abstract "Schema for a provenance chain based on PROV, with additional USAGE terms"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-01-06T13:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/usage-licensing/build/generateddocs/json-full/usage-project/licensing/prov/index.json" ],
-        [ dct:format "text/markdown" ;
+    dct:description [ dct:format "text/markdown" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/usage-licensing/build/generateddocs/markdown/usage-project/licensing/prov/index.md" ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/usage-licensing/build/generateddocs/json-full/usage-project/licensing/prov/index.json" ],
         [ dct:format "text/html" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/usage-licensing/bblock/eu.usage-project.licensing.prov" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2025-07-26"^^xsd:date ;
+    dct:modified "2025-07-29"^^xsd:date ;
     dct:source <https://ogcincubator.github.io/bblock-prov-schema/bblock/ogc.ogc-utils.prov/>,
         <https://www.w3.org/TR/prov-o/> ;
     skos:inScheme <https://ogcincubator.github.io/usage-licensing/> ;
@@ -95,14 +95,14 @@
     rdfs:label "ODRL 2.2 Rule" ;
     dct:abstract "A Rule according to the Open Digital Rights Language (ODRL) version 2.2"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-01-06T13:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/usage-licensing/bblock/eu.usage-project.licensing.odrl.2.2.rule" ],
-        [ dct:format "text/markdown" ;
+    dct:description [ dct:format "text/markdown" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/usage-licensing/build/generateddocs/markdown/usage-project/licensing/odrl/2/2/rule/index.md" ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/usage-licensing/build/generateddocs/json-full/usage-project/licensing/odrl/2/2/rule/index.json" ] ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/usage-licensing/build/generateddocs/json-full/usage-project/licensing/odrl/2/2/rule/index.json" ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/usage-licensing/bblock/eu.usage-project.licensing.odrl.2.2.rule" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2025-07-26"^^xsd:date ;
+    dct:modified "2025-07-29"^^xsd:date ;
     dct:source <https://www.w3.org/TR/odrl-model/>,
         <https://www.w3.org/TR/odrl-vocab/> ;
     skos:inScheme <https://ogcincubator.github.io/usage-licensing/> ;
@@ -122,14 +122,14 @@
     rdfs:label "ODRL 2.2 Constraint" ;
     dct:abstract "A Constraint according to the Open Digital Rights Language (ODRL) version 2.2. This building block is currently a stub."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-01-06T13:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy "https://ogcincubator.github.io/usage-licensing/build/generateddocs/json-full/usage-project/licensing/odrl/2/2/constraint/index.json" ],
-        [ dct:format "text/markdown" ;
+    dct:description [ dct:format "text/markdown" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/usage-licensing/build/generateddocs/markdown/usage-project/licensing/odrl/2/2/constraint/index.md" ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy "https://ogcincubator.github.io/usage-licensing/build/generateddocs/json-full/usage-project/licensing/odrl/2/2/constraint/index.json" ],
         [ dct:format "text/html" ;
             rdfs:isDefinedBy "https://ogcincubator.github.io/usage-licensing/bblock/eu.usage-project.licensing.odrl.2.2.constraint" ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2025-07-26"^^xsd:date ;
+    dct:modified "2025-07-29"^^xsd:date ;
     dct:source <https://www.w3.org/TR/odrl-model/>,
         <https://www.w3.org/TR/odrl-vocab/> ;
     skos:inScheme <https://ogcincubator.github.io/usage-licensing/> ;
@@ -152,14 +152,14 @@
         <https://opengeospatial.github.io/bblocks/register.json> .
 
 [] a prov:Activity ;
-    prov:endedAtTime "2025-07-26T23:09:17.729127"^^xsd:dateTime ;
-    prov:startedAtTime "2025-07-26T23:09:17.657904"^^xsd:dateTime ;
+    prov:endedAtTime "2025-07-29T14:31:07.370516"^^xsd:dateTime ;
+    prov:startedAtTime "2025-07-29T14:31:07.301187"^^xsd:dateTime ;
     prov:used [ a prov:Entity ;
             dct:format "application/yaml" ;
             rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ],
         [ a prov:Entity ;
             dct:format "application/json" ;
-            dct:hasVersion "git:98341cf38c10e502410157be32cdb6c85ed390d5" ;
+            dct:hasVersion "git:cf476665f1af248b4fe617d80f22d55771fb342a" ;
             rdfs:seeAlso <https://ogcincubator.github.io/usage-licensing/build/register.json> ] ;
     prov:wasAssociatedWith [ a prov:Agent,
                 schema:SoftwareApplication ;

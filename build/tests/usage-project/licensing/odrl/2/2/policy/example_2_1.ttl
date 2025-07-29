@@ -1,7 +1,7 @@
 @prefix cc: <http://creativecommons.org/ns#> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix ldr: <http://purl.org/NET/ldr/ns#> .
+@prefix ldr: <http://purl.oclc.org/NET/ldr/ns#> .
 @prefix odrl: <http://www.w3.org/ns/odrl/2/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
@@ -289,8 +289,8 @@ Creative Commons Із Зазначенням Авторства – Некоме
     odrl:permission [ odrl:action cc:DerivativeWorks,
                 cc:Distribution,
                 cc:Reproduction,
-                ldr:extraction,
-                ldr:reutilization ;
+                ldr:Extraction,
+                ldr:Reutilization ;
             odrl:duty [ odrl:action cc:Attribution,
                         cc:Notice ] ] ;
     odrl:prohibition [ odrl:action cc:CommercialUse ] ;

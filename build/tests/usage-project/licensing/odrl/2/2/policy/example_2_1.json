@@ -29,10 +29,10 @@
   "permission": {
     "action": [
       "Distribution",
-      "ldr:extraction",
+      "ldr:Extraction",
       "Reproduction",
       "DerivativeWorks",
-      "ldr:reutilization"
+      "ldr:Reutilization"
     ],
     "duty": {
       "action": [

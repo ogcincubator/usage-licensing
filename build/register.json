@@ -1,6 +1,6 @@
 {
   "name": "USAGE project licensing",
-  "modified": "2025-07-26T23:09:15.973357",
+  "modified": "2025-07-29T14:31:05.010873",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"90449d8d782b37e989efa59d628701428c5ec209",
@@ -27,7 +27,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "0.1",
-      "dateOfLastChange": "2025-07-26",
+      "dateOfLastChange": "2025-07-29",
       "sources": [
         {
           "title": "ODRL Information Model 2.2",
@@ -75,7 +75,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "0.1",
-      "dateOfLastChange": "2025-07-26",
+      "dateOfLastChange": "2025-07-29",
       "sources": [
         {
           "title": "ODRL Information Model 2.2",
@@ -125,7 +125,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "0.1",
-      "dateOfLastChange": "2025-07-26",
+      "dateOfLastChange": "2025-07-29",
       "sources": [
         {
           "title": "ODRL Information Model 2.2",
@@ -178,7 +178,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "0.1",
-      "dateOfLastChange": "2025-07-26",
+      "dateOfLastChange": "2025-07-29",
       "sources": [
         {
           "title": "ODRL Information Model 2.2",
@@ -233,7 +233,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "0.1",
-      "dateOfLastChange": "2025-07-26",
+      "dateOfLastChange": "2025-07-29",
       "sources": [
         {
           "title": "Provenance Chain building block",

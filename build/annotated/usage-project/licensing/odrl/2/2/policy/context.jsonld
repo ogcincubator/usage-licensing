@@ -426,7 +426,7 @@
     "skos": "http://www.w3.org/2004/02/skos/core#",
     "vcard": "http://www.w3.org/2006/vcard/ns#",
     "schema": "http://schema.org/",
-    "ldr": "http://purl.org/NET/ldr/ns#",
+    "ldr": "http://purl.oclc.org/NET/ldr/ns#",
     "industry": "odrl:industry:",
     "@version": 1.1
   }

@@ -19,10 +19,10 @@
   "seeAlso": "http://creativecommons.org/licenses/by-nc-sa/4.0/legalcode",
   "permission": {
     "action": [
-      "ldr:extraction",
+      "ldr:Extraction",
       "DerivativeWorks",
       "Reproduction",
-      "ldr:reutilization"
+      "ldr:Reutilization"
     ],
     "duty": {
       "action": [
