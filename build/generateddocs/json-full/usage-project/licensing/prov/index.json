@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-register",
   "version": "0.1",
-  "dateOfLastChange": "2025-07-29",
+  "dateOfLastChange": "2026-01-13",
   "sources": [
     {
       "title": "Provenance Chain building block",
@@ -25,7 +25,7 @@
     "usage",
     "prov-o"
   ],
-  "shaclRules": {},
+  "shaclShapes": {},
   "dependsOn": [
     "ogc.ogc-utils.prov"
   ],

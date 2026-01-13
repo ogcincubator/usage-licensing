@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-register",
   "version": "0.1",
-  "dateOfLastChange": "2025-07-29",
+  "dateOfLastChange": "2026-01-13",
   "sources": [
     {
       "title": "ODRL Information Model 2.2",
@@ -24,7 +24,7 @@
     "licensing",
     "odrl"
   ],
-  "shaclRules": {},
+  "shaclShapes": {},
   "schema": {
     "application/yaml": "https://ogcincubator.github.io/usage-licensing/build/annotated/usage-project/licensing/odrl/2/2/constraint/schema.yaml",
     "application/json": "https://ogcincubator.github.io/usage-licensing/build/annotated/usage-project/licensing/odrl/2/2/constraint/schema.json"

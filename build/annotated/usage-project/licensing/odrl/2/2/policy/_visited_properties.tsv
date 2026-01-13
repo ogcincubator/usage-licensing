@@ -2,8 +2,6 @@ path	@id
 /uid	@id
 /type	@type
 /label	http://www.w3.org/2000/01/rdf-schema#label
-/label/@language	
-/label/@value	
 /legalcode	http://creativecommons.org/ns#legalcode
 /hasVersion	http://purl.org/dc/terms/hasVersion
 /hasLanguage	http://purl.org/dc/terms/language

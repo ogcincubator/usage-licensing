@@ -1,0 +1,302 @@
+{
+  "summary": {
+    "total": 5,
+    "passed": 5,
+    "failed": 0,
+    "result": true
+  },
+  "bblocks": {
+    "eu.usage-project.licensing.odrl.2.2.constraint": {
+      "title": "Validation report for eu.usage-project.licensing.odrl.2.2.constraint - ODRL 2.2 Constraint",
+      "bblockName": "ODRL 2.2 Constraint",
+      "bblockId": "eu.usage-project.licensing.odrl.2.2.constraint",
+      "generated": "2026-01-13T22:41:07.992130+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "eu.usage-project.licensing.odrl.2.2.rule": {
+      "title": "Validation report for eu.usage-project.licensing.odrl.2.2.rule - ODRL 2.2 Rule",
+      "bblockName": "ODRL 2.2 Rule",
+      "bblockId": "eu.usage-project.licensing.odrl.2.2.rule",
+      "generated": "2026-01-13T22:41:07.999135+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "eu.usage-project.licensing.odrl.2.2.action": {
+      "title": "Validation report for eu.usage-project.licensing.odrl.2.2.action - ODRL 2.2 Action",
+      "bblockName": "ODRL 2.2 Action",
+      "bblockId": "eu.usage-project.licensing.odrl.2.2.action",
+      "generated": "2026-01-13T22:41:08.006210+00:00",
+      "result": true,
+      "items": [],
+      "globalErrors": {},
+      "counts": {
+        "total": 0,
+        "passed": 0,
+        "failed": 0
+      }
+    },
+    "eu.usage-project.licensing.odrl.2.2.policy": {
+      "title": "Validation report for eu.usage-project.licensing.odrl.2.2.policy - ODRL 2.2 Policy",
+      "bblockName": "ODRL 2.2 Policy",
+      "bblockId": "eu.usage-project.licensing.odrl.2.2.policy",
+      "generated": "2026-01-13T22:41:08.058000+00:00",
+      "result": true,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/usage-project/licensing/odrl/2/2/policy/example_1_1.json",
+            "url": "https://ogcincubator.github.io/usage-licensing/build/tests/usage-project/licensing/odrl/2/2/policy/example_1_1.json",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_1_1.json from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_1_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_1_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_1_1.ttl",
+                  "size": 24,
+                  "isError": false,
+                  "message": "Output Turtle example_1_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/usage-project/licensing/odrl/2/2/policy/example_2_1.json",
+            "url": "https://ogcincubator.github.io/usage-licensing/build/tests/usage-project/licensing/odrl/2/2/policy/example_2_1.json",
+            "exampleIndex": 2,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_2_1.json from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_2_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_2_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_2_1.ttl",
+                  "size": 24,
+                  "isError": false,
+                  "message": "Output Turtle example_2_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/usage-project/licensing/odrl/2/2/policy/example_3_1.json",
+            "url": "https://ogcincubator.github.io/usage-licensing/build/tests/usage-project/licensing/odrl/2/2/policy/example_3_1.json",
+            "exampleIndex": 3,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_3_1.json from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_3_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_3_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_3_1.ttl",
+                  "size": 22,
+                  "isError": false,
+                  "message": "Output Turtle example_3_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 3,
+        "passed": 3,
+        "failed": 0
+      }
+    },
+    "eu.usage-project.licensing.prov": {
+      "title": "Validation report for eu.usage-project.licensing.prov - USAGE Provenance Schema",
+      "bblockName": "USAGE Provenance Schema",
+      "bblockId": "eu.usage-project.licensing.prov",
+      "generated": "2026-01-13T22:41:08.303714+00:00",
+      "result": true,
+      "items": [
+        {
+          "source": {
+            "type": "EXAMPLE",
+            "requireFail": false,
+            "filename": "build/tests/usage-project/licensing/prov/example_1_1.json",
+            "url": "https://ogcincubator.github.io/usage-licensing/build/tests/usage-project/licensing/prov/example_1_1.json",
+            "exampleIndex": 1,
+            "snippetIndex": 1,
+            "language": "application/json"
+          },
+          "result": true,
+          "sections": [
+            {
+              "name": "FILES",
+              "title": "Files",
+              "entries": [
+                {
+                  "isError": false,
+                  "message": "Using example_1_1.json from examples"
+                },
+                {
+                  "op": "jsonld-uplift",
+                  "isError": false,
+                  "message": "JSON-LD context is present - uplifting"
+                },
+                {
+                  "op": "jsonld-create",
+                  "filename": "example_1_1.jsonld",
+                  "isError": false,
+                  "message": "Output JSON-LD example_1_1.jsonld created"
+                },
+                {
+                  "op": "ttl-create",
+                  "empty": false,
+                  "filename": "example_1_1.ttl",
+                  "size": 15,
+                  "isError": false,
+                  "message": "Output Turtle example_1_1.ttl created"
+                }
+              ]
+            },
+            {
+              "name": "JSON_SCHEMA",
+              "title": "JSON Schema",
+              "entries": [
+                {
+                  "op": "validation",
+                  "result": true,
+                  "isError": false,
+                  "message": "Validation passed"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "globalErrors": {},
+      "counts": {
+        "total": 1,
+        "passed": 1,
+        "failed": 0
+      }
+    }
+  }
+}
