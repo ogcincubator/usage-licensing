@@ -18,3 +18,6 @@ jobs:
     # with:
     #   sparql_username: sparql
     #   sparql_password: Secr3T
+    secrets:
+      sparql_username: ${{ secrets.sparql_username }}
+      sparql_password: ${{ secrets.sparql_password }}
